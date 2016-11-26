@@ -2,51 +2,60 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Html Academy: Пинк</title>
   </head>
   <body>
-    <header class="index-header  container">
-      <h1 class="visually-hidden">
-        PINK
-      </h1>
-      <nav class="main-nav  main-nav--closed  main-nav--no-js">
-        <div class="main-nav__wrapper">
-          <div class="page-header__logo">
+    <header class="page-header  container">
+      <div class="page-header__top">
+        <div class="logo">
+          <a class="logo__link">
             <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
-          </div>
-          <button class="main-nav__toggle  main-nav__toggle--open" type="button">Открыть меню</button>
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a>
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">
-                HTML ACADEMY
-              </a>
-            </li>
-          </ul>
+          </a>
+          <h1 class="logo__description">
+            Pink
+          </h1>
         </div>
-      </nav>
+        <nav class="main-nav  main-nav--closed  main-nav--no-js">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle  main-nav__toggle--open" type="button">Открыть меню</button>
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a>
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="photo.html">
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru">
+                  Html Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="page-header__bottom">
+
+      </div>
+    </header>
+    <main class="main  container">
       <section class="downloads">
         <h2 class="visually-hidden">
           Загрузки
         </h2>
-        <div class="downloads__illustration">
-          <img src="http://placehold.it/320x278" alt="Приложение PINK" width="320" height="287">
+        <div class="downloads__button-wrapper">
+          <button class="wide-button  downloads__download-button">Скачать приложение</button>
         </div>
-        <div class="downloads__wrapper">
+        <div class="downloads__apps-wrapper">
           <a class="downloads__apple-store" href="#">Apple Store</a>
           <a class="downloads__android-market" href="#">Google Play</a>
           <a class="downloads__windows-store" href="#">Windows Store</a>
@@ -55,8 +64,6 @@
           Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
         </p>
       </section>
-    </header>
-    <main class="container">
       <section class="features">
         <h2 class="visually-hidden">
           Преимущества
@@ -69,7 +76,7 @@
             Нам есть, что вам предложить!
           </p>
         </div>
-        <div class="features-items">
+        <div class="features__items">
           <div class="features__item">
             <h3>
               Поднимает настроение
@@ -93,9 +100,6 @@
             <p>
               Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
-          </div>
-          <div class="features__illustration">
-            <img src="http://placehold.it/157x278" alt="Преимущества PINK" width="157" height="278">
           </div>
         </div>
       </section>
@@ -152,7 +156,7 @@
         </div>
       </section>
     </main>
-    <footer class="index-footer  container">
+    <footer class="page-footer  container">
       <section class="contacts">
         <h2 class="visually-hidden">
           Контактная информация
@@ -174,9 +178,9 @@
             <b>
               Пишите:
             </b>
-            <span>
+            <a href="mailto:mail@htmlacademy.ru">
               mail&#64;htmlacademy.ru
-            </span>
+            </a>
           </div>
           <div class="contacts__address">
             <b>
@@ -187,11 +191,12 @@
               Конюшенная, 19/8
             </p>
           </div>
-          <div class="contacts__map">
+          <div class="contacts__map" id="interactive-map">
 
           </div>
         </div>
       </section>
     </footer>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Kj-_2SBnHa8aFxdGtB7fIeNJXJKRvLXH&amp;width=320&amp;height=200&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=interactive-map"></script>
   </body>
 </html>

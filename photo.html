@@ -2,47 +2,56 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Html Academy: Пинк</title>
 </head>
   <body>
-    <header class="photo-header  container">
-      <h1 class="visually-hidden">
-        PINK
-      </h1>
-      <nav class="main-nav  main-nav--closed  main-nav--no-js">
-        <div class="main-nav__wrapper">
-          <div class="page-header__logo">
+    <header class="page-header  container">
+      <div class="page-header__top">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
             <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
-          </div>
-          <button class="main-nav__toggle  main-nav__toggle--open" type="button">Открыть меню</button>
-          <ul class="main-nav__items">
-            <li class="main-nav__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a>
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">
-                HTML ACADEMY
-              </a>
-            </li>
-          </ul>
+          </a>
+          <h1 class="logo__description">
+            Pink
+          </h1>
         </div>
-      </nav>
+        <nav class="main-nav  main-nav--closed  main-nav--no-js">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle  main-nav__toggle--open" type="button">Открыть меню</button>
+            <ul class="main-nav__items">
+              <li class="main-nav__item">
+                <a href="index.html">
+                  Главная
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a>
+                  Фотографии
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="form.html">
+                  Конкурс
+                </a>
+              </li>
+              <li class="main-nav__item">
+                <a href="https://htmlacademy.ru">
+                  Html Academy
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="page-header__bottom">
+        <p>
+          Фотографии пользователей
+        </p>
+      </div>
     </header>
-    <main class="container">
+    <main class="main  container">
       <section class="users-photos">
-        <h2 class="users-photos__title">
+        <h2 class="visually-hidden">
           Фотографии пользователей
         </h2>
         <p class="users-photos__intro">
@@ -198,9 +207,9 @@
           <img src="http://placehold.it/280x375" width="280" height="375" alt="Фото пользователя">
         </div>
         <div class="photo-editor__controls">
-          <button class="photo-editor__button   photo-editor__button--crop" type="button">Обрезать</button>
-          <button class="photo-editor__button   photo-editor__button--fill" type="button">Заливка</button>
-          <button class="photo-editor__button   photo-editor__button--contrast" type="button">Контрастность</button>
+          <button class="photo-editor__button  photo-editor__button--crop" type="button">Обрезать</button>
+          <button class="photo-editor__button  photo-editor__button--fill" type="button">Заливка</button>
+          <button class="photo-editor__button  photo-editor__button--contrast" type="button">Контрастность</button>
         </div>
         <div class="photo-editor__controls    range-slider">
           <div class="range-slider__scale">
@@ -209,14 +218,19 @@
           <div class="range-slider__toggle"></div>
         </div>
         <div class="photo-editor__upload">
-          <button class="photo-editor__upload-button    photo-editor__upload-button--upload" type="button">Запостить</button>
-          <button class="photo-editor__upload-button    photo-editor__upload-button--cancel" type="button">Отменить</button>
+          <button class="wide-button  photo-editor__upload-button" type="button">Запостить</button>
+          <button class="wide-button  photo-editor__cancel-button" type="button">Отменить</button>
         </div>
       </section>
     </main>
     <footer class="page-footer  container">
-      <div class="page-footer__logo">
-        <img src="http://placehold.it/150x40" width="150" height="40" alt="PINK">
+      <div class="logo-block">
+        <img class="logo-block__additional-img" src="http://placehold.it/61x40" alt="glasses" width="61" height="40">
+        <div class="logo">
+          <a class="logo__link" href="index.html">
+            Pink
+          </a>
+        </div>
       </div>
       <div class="page-footer__social">
         <a class="page-footer__social    page-footer__social--twitter">
@@ -233,7 +247,7 @@
         <span>
           Разработано
         </span>
-        <a href="#">
+        <a href="https://htmlacademy.ru">
           <img src="http://placehold.it/27x34" width="27" height="34" alt="HTML academy">
         </a>
       </div>
