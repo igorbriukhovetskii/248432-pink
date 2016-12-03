@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Html Academy: Пинк</title>
+  <meta charset="UTF-8">
+  <title>Html Academy: Пинк</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
   <body>
     <header class="page-header  container">
@@ -11,39 +12,40 @@
           <a class="logo__link" href="index.html">
             <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
           </a>
-          <h1 class="logo__description">
+          <h1 class="logo__description  visually-hidden">
             Pink
           </h1>
         </div>
-        <nav class="main-nav  main-nav--closed  main-nav--no-js">
-          <div class="main-nav__wrapper">
-            <button class="main-nav__toggle  main-nav__toggle--open" type="button">Открыть меню</button>
-            <ul class="main-nav__items">
-              <li class="main-nav__item">
-                <a href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a>
-                  Фотографии
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html">
-                  Конкурс
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="https://htmlacademy.ru">
-                  Html Academy
-                </a>
-              </li>
-            </ul>
-          </div>
+        <nav class="main-nav">
+          <a class="main-nav__toggle" href="#">
+            Открыть меню
+            <span></span>
+          </a>
+          <ul class="main-nav__items  main-nav__items--closed  main-nav__items--no-js">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a>
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                Html Academy
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
-      <div class="page-header__bottom">
+      <div class="page-header__bottom  page-header__bottom--inner">
         <p>
           Фотографии пользователей
         </p>
@@ -58,18 +60,18 @@
           Взгляните на фотографии, которые выкладывают пользователи!
           Видите, как не хватает ваших?
         </p>
-        <div class="user-photo">
+        <div class="user-photo user-photo--featured">
           <div class="user-photo__user-img    user-photo__user-img--featured">
-            <img src="http://placehold.it/320x137" width="320" height="137" alt="Панорама дня">
+            <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
           </div>
-          <div class="user-photo__comments">
+          <div class="user-photo__comment">
             <b class="user-photo__author-name">
               Анна
             </b>
             <span class="user-photo__time">
               (5 минут назад)
             </span>
-            <p class="user-photo__comment">
+            <p class="user-photo__comment-text">
               Прыгать или нет? Напишите в коментарии свой совет и
               смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
@@ -80,16 +82,16 @@
         </div>
         <div class="user-photo">
           <div class="user-photo__user-img">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-1-mobile@1x.jpg" alt="Фото пользователя">
           </div>
-          <div class="user-photo__comments">
+          <div class="user-photo__comment">
             <b class="user-photo__author-name">
               Левон
             </b>
             <span class="user-photo__time">
               (5 часов назад)
             </span>
-            <p class="user-photo__comment">
+            <p class="user-photo__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
           </div>
@@ -99,16 +101,16 @@
         </div>
         <div class="user-photo">
           <div class="user-photo__user-img">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-2-mobile@1x.jpg" alt="Фото пользователя">
           </div>
-          <div class="user-photo__comments">
+          <div class="user-photo__comment">
             <b class="user-photo__author-name">
               Антон
             </b>
             <span class="user-photo__time">
               (12 часов назад)
             </span>
-            <p class="user-photo__comment">
+            <p class="user-photo__text">
               Соседи будут рады!
             </p>
           </div>
@@ -118,16 +120,16 @@
         </div>
         <div class="user-photo">
           <div class="user-photo__user-img">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-3-mobile@1x.jpg" alt="Фото пользователя">
           </div>
-          <div class="user-photo__comments">
+          <div class="user-photo__comment">
             <b class="user-photo__author-name">
               Борис
             </b>
             <span class="user-photo__time">
               (20 часов назад)
             </span>
-            <p class="user-photo__comment">
+            <p class="user-photo__text">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
           </div>
@@ -137,16 +139,16 @@
         </div>
         <div class="user-photo">
           <div class="user-photo__user-img">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-4-mobile@1x.jpg" alt="Фото пользователя">
           </div>
-          <div class="user-photo__comments">
+          <div class="user-photo__comment">
             <b class="user-photo__author-name">
               Сергей
             </b>
             <span class="user-photo__time">
               (25 часов назад)
             </span>
-            <p class="user-photo__comment">
+            <p class="user-photo__text">
               Самая кубанская в мире!
             </p>
           </div>
@@ -156,16 +158,16 @@
         </div>
         <div class="user-photo">
           <div class="user-photo__user-img">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-5-mobile@1x.jpg" alt="Фото пользователя">
           </div>
-          <div class="user-photo__comments">
+          <div class="user-photo__comment">
             <b class="user-photo__author-name">
               Максим
             </b>
             <span class="user-photo__time">
               (40 часов назад)
             </span>
-            <p class="user-photo__comment">
+            <p class="user-photo__text">
               Где снег-то?
             </p>
           </div>
@@ -175,16 +177,16 @@
         </div>
         <div class="user-photo">
           <div class="user-photo__user-img">
-            <img src="http://placehold.it/280x180" width="280" height="180" alt="Фото пользователя">
+            <img src="img/photo-6-mobile@1x.jpg" alt="Фото пользователя">
           </div>
-          <div class="user-photo__comments">
+          <div class="user-photo__comment">
             <b class="user-photo__author-name">
               Надежда
             </b>
             <span class="user-photo__time">
               (45 часов назад)
             </span>
-            <p class="user-photo__comment">
+            <p class="user-photo__text">
               Всем GM и взаимные лайки!
             </p>
           </div>
@@ -192,7 +194,7 @@
             <span>Нравится: 2560</span>
           </div>
         </div>
-        <div class="users-photo__closing-text">
+        <div class="users-photos__closing-text">
           <p>
             Затмите их всех!
             Выкладывайте все, что накопилось в телефоне!
@@ -204,7 +206,7 @@
           Редактирование и загрузка фото
         </h2>
         <div class="photo-editor__photo">
-          <img src="http://placehold.it/280x375" width="280" height="375" alt="Фото пользователя">
+          <img src="img/photo-7-mobile@1x.jpg" alt="Фото пользователя">
         </div>
         <div class="photo-editor__controls">
           <button class="photo-editor__button  photo-editor__button--crop" type="button">Обрезать</button>
@@ -223,7 +225,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer  container">
+    <footer class="inner-page-footer  container">
       <div class="logo-block">
         <img class="logo-block__additional-img" src="http://placehold.it/61x40" alt="glasses" width="61" height="40">
         <div class="logo">
@@ -232,18 +234,18 @@
           </a>
         </div>
       </div>
-      <div class="page-footer__social">
-        <a class="page-footer__social    page-footer__social--twitter">
+      <div class="inner-page-footer__social">
+        <a class="inner-page-footer__social    inner-page-footer__social--twitter">
           Twitter
         </a>
-        <a class="page-footer__social    page-footer__social--facebook">
+        <a class="inner-page-footer__social    inner-page-footer__social--facebook">
           Facebook
         </a>
-        <a class="page-footer__social    page-footer__social--youtube">
+        <a class="inner-page-footer__social    inner-page-footer__social--youtube">
           Youtube
         </a>
       </div>
-      <div class="page-footer__developed-by">
+      <div class="inner-page-footer__developed-by">
         <span>
           Разработано
         </span>
@@ -252,5 +254,6 @@
         </a>
       </div>
     </footer>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
