@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
     <title>Html Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header  container">
@@ -11,36 +13,37 @@
           <a class="logo__link">
             <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
           </a>
-          <h1 class="logo__description">
+          <h1 class="logo__description  visually-hidden">
             Pink
           </h1>
         </div>
-        <nav class="main-nav  main-nav--closed  main-nav--no-js">
-          <div class="main-nav__wrapper">
-            <button class="main-nav__toggle  main-nav__toggle--open" type="button">Открыть меню</button>
-            <ul class="main-nav__items">
-              <li class="main-nav__item">
-                <a>
-                  Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="photo.html">
-                  Фотографии
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="form.html">
-                  Конкурс
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="https://htmlacademy.ru">
-                  Html Academy
-                </a>
-              </li>
-            </ul>
-          </div>
+        <nav class="main-nav">
+          <a class="main-nav__toggle" href="#">
+            Открыть меню
+            <span></span>
+          </a>
+          <ul class="main-nav__items  main-nav__items--closed  main-nav__items--no-js">
+            <li class="main-nav__item">
+              <a>
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                Html Academy
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
       <div class="page-header__bottom">
@@ -52,6 +55,9 @@
         <h2 class="visually-hidden">
           Загрузки
         </h2>
+        <div class="downloads__intro">
+
+        </div>
         <div class="downloads__button-wrapper">
           <button class="wide-button  downloads__download-button">Скачать приложение</button>
         </div>
@@ -103,7 +109,7 @@
           </div>
         </div>
       </section>
-      <section class="user-reviews slider">
+      <section class="user-reviews  slider">
         <h2 class="visually-hidden">
           Отзывы пользователей
         </h2>
@@ -166,37 +172,38 @@
             Остались вопросы?
             Свяжитесь с нами!
           </p>
-          <div class="contacts__phone">
-            <b>
-              Звоните:
-            </b>
-            <a href="tel:+78125556666">
-              +7&nbsp;(812)&nbsp;555-66-66
-            </a>
-          </div>
-          <div class="contacts__email">
-            <b>
-              Пишите:
-            </b>
-            <a href="mailto:mail@htmlacademy.ru">
-              mail&#64;htmlacademy.ru
-            </a>
-          </div>
-          <div class="contacts__address">
-            <b>
-              Приезжайте в гости:
-            </b>
-            <p>
-              ул. Большая
-              Конюшенная, 19/8
-            </p>
-          </div>
-          <div class="contacts__map" id="interactive-map">
+        </div>
+        <div class="contacts__phone">
+          <b>
+            Звоните:
+          </b>
+          <a href="tel:+78125556666">
+            +7&nbsp;(812)&nbsp;555-66-66
+          </a>
+        </div>
+        <div class="contacts__email">
+          <b>
+            Пишите:
+          </b>
+          <a href="mailto:mail@htmlacademy.ru">
+            mail&#64;htmlacademy.ru
+          </a>
+        </div>
+        <div class="contacts__address">
+          <b>
+            Приезжайте в гости:
+          </b>
+          <p>
+            ул. Большая
+            Конюшенная, 19/8
+          </p>
+        </div>
+        <div class="contacts__map" id="interactive-map">
 
-          </div>
         </div>
       </section>
     </footer>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Kj-_2SBnHa8aFxdGtB7fIeNJXJKRvLXH&amp;width=320&amp;height=200&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=interactive-map"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

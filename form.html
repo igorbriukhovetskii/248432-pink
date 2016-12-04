@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-      <meta charset="UTF-8">
-      <title>Html Academy: Пинк</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Html Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header  container">
@@ -11,39 +13,40 @@
           <a class="logo__link" href="index.html">
             <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
           </a>
-          <h1 class="logo__description">
+          <h1 class="logo__description visually-hidden">
             Pink
           </h1>
         </div>
-        <nav class="main-nav  main-nav--closed  main-nav--no-js">
-          <div class="main-nav__wrapper">
-            <button class="main-nav__toggle  main-nav__toggle--open" type="button">Открыть меню</button>
-            <ul class="main-nav__items">
-              <li class="main-nav__item">
-                <a href="index.html">
-                  Главная
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="photo.html">
-                  Фотографии
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a>
-                  Конкурс
-                </a>
-              </li>
-              <li class="main-nav__item">
-                <a href="https://htmlacademy.ru">
-                  Html Academy
-                </a>
-              </li>
-            </ul>
-          </div>
+        <nav class="main-nav">
+          <a class="main-nav__toggle" href="#">
+            Открыть меню
+            <span></span>
+          </a>
+          <ul class="main-nav__items  main-nav__items--closed  main-nav__items--no-js">
+            <li class="main-nav__item">
+              <a href="index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">
+                Фотографии
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a>
+                Конкурс
+              </a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru">
+                Html Academy
+              </a>
+            </li>
+          </ul>
         </nav>
       </div>
-      <div class="page-header__bottom">
+      <div class="page-header__bottom  page-header__bottom--inner">
         <p>
           Конкурс на самое безбашеное путешествие с Пинк
         </p>
@@ -138,13 +141,15 @@
             Можно прям в красках, не стесняясь в выражениях
           </textarea>
         </div>
-        <button type="submit">Отправить форму</button>
-        <p>
-          * &mdash; обязательные поля
-        </p>
+        <div class="special-offer__submit">
+          <button id="submit-form">Отправить форму</button>
+          <p>
+            * &mdash; обязательные поля
+          </p>
+        </div>
       </form>
     </main>
-    <footer class="page-footer  container">
+    <footer class="inner-page-footer  container">
       <div class="logo-block">
         <img class="logo-block__additional-img" src="http://placehold.it/61x40" alt="glasses" width="61" height="40">
         <div class="logo">
@@ -153,18 +158,18 @@
           </a>
         </div>
       </div>
-      <div class="page-footer__social">
-        <a class="page-footer__social    page-footer__social--twitter">
+      <div class="inner-page-footer__social">
+        <a class="inner-page-footer__social    inner-page-footer__social--twitter">
           Twitter
         </a>
-        <a class="page-footer__social    page-footer__social--facebook">
+        <a class="inner-page-footer__social    inner-page-footer__social--facebook">
           Facebook
         </a>
-        <a class="page-footer__social    page-footer__social--youtube">
+        <a class="inner-page-footer__social    inner-page-footer__social--youtube">
           Youtube
         </a>
       </div>
-      <div class="page-footer__developed-by">
+      <div class="inner-page-footer__developed-by">
         <span>
           Разработано
         </span>
@@ -173,7 +178,7 @@
         </a>
       </div>
     </footer>
-    <div class="popup  popup--failure">
+    <div class="popup  popup--failure  visually-hidden">
       <b>
         Что-то пошло не так!
       </b>
@@ -181,10 +186,10 @@
         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
       </p>
       <div class="popup__button-wrapper">
-        <button type="button">Ok</button>
+        <button id="close-failure-popup" type="button">Ok</button>
       </div>
     </div>
-    <div class="popup  popup--success">
+    <div class="popup  popup--success  visually-hidden">
       <b>
         Ваша заявка отправлена
       </b>
@@ -194,8 +199,11 @@
         оповестим вас.
       </p>
       <div class="popup__button-wrapper">
-        <button type="button">Закрыть окно</button>
+        <button id="close-success-popup" type="button">Закрыть окно</button>
       </div>
     </div>
+    <div class="overlay visually-hidden"></div>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/form-script.js"></script>
   </body>
 </html>
