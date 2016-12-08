@@ -1,7 +1,14 @@
 .features {
-  min-height: 1002px;
-  background: @main-bg-light url("../img/iphone-screen-mobile@1x.png") no-repeat 82px 725px;
+  background-color: @main-bg-light;
   outline: 1px solid red;
+
+  .container();
+  .clearfix();
+
+  @media @desktop-width {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .features__intro {
@@ -13,10 +20,30 @@
   font-weight: 100;
   color: @main-bg-dark;
   background-color: #ffffff;
+  order: -2;
 }
 
 .features__items {
+  min-height: 477px;
   padding: 0 20px;
+  outline: 1px solid red;
+
+  @media @tablet-width {
+    float: right;
+    width: 340px;
+    min-height: 481px;
+  }
+
+  @media @desktop-width {
+    width: 100%;
+    min-height: 326px;
+  }
+}
+
+.features__item {
+  @media @desktop-width {
+    float: left;
+  }
 }
 
 .features__item h3 {
@@ -29,4 +56,86 @@
   font-size: 14px;
   line-height: 1.7;
   color: @main-bg-dark;
+}
+
+.features__illustrations {
+
+  @media @desktop-width {
+    display: flex;
+    justify-content: space-between;
+    outline: 1px solid green;
+    order: -1;
+  }
+}
+
+.features__illustration {
+  min-height: 277px;
+  background: @main-bg-light url("../img/iphone-screen-mobile@1x.png") no-repeat top;
+  outline: 1px solid red;
+
+  @media @tablet-width {
+    width: 300px;
+    min-height: 481px;
+  }
+
+  @media @desktop-width {
+    min-height: 301px;
+  }
+}
+
+.features__illustration:not(:nth-child(1)) {
+  display: none;
+
+  @media @desktop-width {
+    display: block;
+  }
+}
+
+.features__research {
+  display: none;
+  outline: 1px solid red;
+
+  @media @tablet-width {
+    display: block;
+    min-height: 400px;
+    padding-left: 330px;
+  }
+
+  @media @desktop-width {
+    min-height: 412px;
+    padding-left: 380px;
+  }
+}
+
+.features__research h3 {
+  font-family: "Open Sans Bold", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: bold;
+  color: #000000;
+
+  @media @desktop-width {
+    line-height: 1;
+  }
+}
+
+.features__research p {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+
+  @media @desktop-width {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+}
+
+.promo-item__feature span {
+  font-size: 14px;
+  line-height: 2.14;
+
+  @media @desktop-width {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }

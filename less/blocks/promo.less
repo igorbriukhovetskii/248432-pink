@@ -3,15 +3,36 @@
   padding: 0 20px;
   background-color: @main-bg-light;
   outline: 1px solid red;
+
+  .container();
+
+  @media @tablet-width {
+    min-height: 324px;
+  }
+
+  @media @desktop-width {
+    min-height: 524px;
+  }
 }
 
-.promo-item__header {
+.promo-item__header b {
+  font-family: "Open Sans Bold", Arial, sans-serif;
   font-size: 18px;
   line-height: 1.66;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffffff;
   background-color: @main-bg-dark;
+
+  @media @tablet-width {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+
+  @media @desktop-width {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }
 
 .promo-item__header span {
@@ -19,4 +40,9 @@
   font-size: 24px;
   line-height: 1.25;
   font-weight: 100;
+
+  @media @tablet-width {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }

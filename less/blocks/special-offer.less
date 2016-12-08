@@ -1,32 +1,93 @@
+.special-offer {
+  outline: 1px solid red;
+
+  .container();
+}
+
+.special-offer__wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
 .special-offer__intro {
+  min-height: 140px;
   font-size: 14px;
   line-height: 2.1;
   color: @main-bg-dark;
-  min-height: 140px;
   padding: 0 20px;
-  outline: 1px solid blue;
+  background-color: #ffffff;
+  outline: 1px solid red;
+
+  @media @tablet-width {
+    min-height: 200px;
+  }
 }
 
 .special-offer__name-input {
-  min-height: 394px;
+  min-height: 399px;
   padding: 0 20px;
-  outline: 1px solid blue;
+  background-color: #ffffff;
+  outline: 1px solid red;
+
+  @media @tablet-width {
+    width: 100%;
+    min-height: 380px;
+    order: -3;
+  }
+
+  @media @desktop-width {
+    width: 50%;
+  }
 }
 
-.special-offer__name-input label,
-.special-offer__achievements p,
+.special-offer__app-name {
+  min-height: 340px;
+  padding: 0 20px;
+  background-color: @main-bg-light;
+  outline: 1px solid red;
+
+  @media @tablet-width {
+    width: 100%;
+    min-height: 360px;
+    order: -2;
+  }
+
+  @media @desktop-width {
+    width: 50%;
+    min-height: 380px;
+    background-color: #ffffff;
+  }
+}
+
+.special-offer__comment legend,
+.special-offer__app-name legend,
+.special-offer__achievements legend,
 .special-offer__contacts label,
-.special-offer__app-name p,
-.special-offer__comment label {
+.special-offer__comment label,
+.special-offer__name-input label {
   font-size: 14px;
   line-height: 2.1;
   color: @shade-of-red;
   text-transform: uppercase;
 }
 
-.special-offer__achievements p,
-.special-offer__app-name p{
+.special-offer__comment legend,
+.special-offer__achievements legend,
+.special-offer__app-name legend {
   line-height: 1.3;
+  text-align: center;
+}
+
+.special-offer__comment fieldset,
+.special-offer__achievements fieldset,
+.special-offer__app-name fieldset {
+  border: none;
+
+  @media @tablet-width {
+    border: 2px solid #e5e5e5;
+    border-radius: 3px;
+  }
 }
 
 .special-offer__achievements label,
@@ -35,41 +96,74 @@
 .special-offer__contacts input,
 .special-offer__comment textarea,
 .special-offer__submit p {
+  width: 100%;
   font-size: 18px;
   line-height: 1.67;
   color: @main-bg-dark;
+
+  @media @tablet-width {
+    width: 85%;
+  }
 }
 
 .special-offer__achievements {
   min-height: 604px;
   padding: 0 20px;
   background-color: @main-bg-light;
-  outline: 1px solid blue;
+  outline: 1px solid red;
+
+  @media @tablet-width {
+    width: 100%;
+    min-height: 615px;
+  }
+
+  @media @desktop-width {
+    min-height: 310px;
+  }
 }
 
 .special-offer__contacts {
   min-height: 287px;
   padding: 0 20px;
-  outline: 1px solid blue;
-}
+  background-color: #ffffff;
+  outline: 1px solid red;
 
-.special-offer__app-name {
-  min-height: 340px;
-  padding: 0 20px;
-  background-color: @main-bg-light;
-  outline: 1px solid blue;
+  @media @tablet-width {
+    width: 100%;
+    min-height: 380px;
+    order: -1;
+  }
+
+  @media @desktop-width {
+    min-height: 200px;
+  }
 }
 
 .special-offer__comment {
+  width: 100%;
   min-height: 321px;
   padding: 0 20px;
-  outline: 1px solid blue;
+  background-color: #ffffff;
+  outline: 1px solid red;
+
+  @media @tablet-width {
+    min-height: 394px;
+  }
+
+  @media @desktop-width {
+    min-height: 312px;
+  }
 }
 
 .special-offer__submit {
   min-height: 143px;
-}
+  background-color: #ffffff;
 
-.special-offer {
-  outline: 1px solid red;
+  @media @tablet-width {
+    min-height: 113px;
+  }
+
+  @media @desktop-width {
+    min-height: 64px;
+  }
 }

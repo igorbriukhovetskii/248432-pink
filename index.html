@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header  container">
+    <header class="page-header">
       <div class="page-header__top">
         <div class="logo">
           <a class="logo__link">
@@ -18,11 +18,13 @@
           </h1>
         </div>
         <nav class="main-nav">
-          <a class="main-nav__toggle" href="#">
+          <a class="main-nav__menu-toggle  main-nav__menu-toggle--no-js" href="#">
             Открыть меню
             <span></span>
           </a>
-          <ul class="main-nav__items  main-nav__items--closed  main-nav__items--no-js">
+          <!--При отключенном Java Script применяется правило для классов с модификатором --no-js
+          Главное меню загружается в потоке в открытом состоянии-->
+          <ul class="main-nav__items  main-nav__items--no-js">
             <li class="main-nav__item">
               <a>
                 Главная
@@ -47,29 +49,33 @@
         </nav>
       </div>
       <div class="page-header__bottom">
+        <section class="downloads">
+          <div class="downloads__intro">
 
+          </div>
+          <div class="downloads__main">
+            <h2 class="visually-hidden">
+              Загрузки
+            </h2>
+            <p class="downloads__slogan">
+              Взгляните на жизнь иначе!
+            </p>
+            <div class="downloads__button-wrapper">
+              <button class="wide-button  downloads__download-button">Скачать приложение</button>
+            </div>
+            <div class="downloads__apps-wrapper">
+              <a class="downloads__apple-store" href="#">Apple Store</a>
+              <a class="downloads__android-market" href="#">Google Play</a>
+              <a class="downloads__windows-store" href="#">Windows Store</a>
+            </div>
+            <p class="downloads__platforms-list">
+              Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
+            </p>
+          </div>
+        </section>
       </div>
     </header>
-    <main class="main  container">
-      <section class="downloads">
-        <h2 class="visually-hidden">
-          Загрузки
-        </h2>
-        <div class="downloads__intro">
-
-        </div>
-        <div class="downloads__button-wrapper">
-          <button class="wide-button  downloads__download-button">Скачать приложение</button>
-        </div>
-        <div class="downloads__apps-wrapper">
-          <a class="downloads__apple-store" href="#">Apple Store</a>
-          <a class="downloads__android-market" href="#">Google Play</a>
-          <a class="downloads__windows-store" href="#">Windows Store</a>
-        </div>
-        <p>
-          Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
-        </p>
-      </section>
+    <main>
       <section class="features">
         <h2 class="visually-hidden">
           Преимущества
@@ -108,6 +114,29 @@
             </p>
           </div>
         </div>
+        <div class="features__illustrations">
+          <div class="features__illustration">
+
+          </div>
+          <div class="features__illustration">
+
+          </div>
+          <div class="features__illustration">
+
+          </div>
+        </div>
+        <div class="features__research">
+          <h3>
+            Эффект на 24 часа!
+          </h3>
+          <p>
+            Британские ученые провели исследования и доказали,
+            что положительный эффект от использования приложения длится целые сутки!
+          </p>
+          <a>
+
+          </a>
+        </div>
       </section>
       <section class="user-reviews  slider">
         <h2 class="visually-hidden">
@@ -117,6 +146,9 @@
           <b class="user-reviews__author-name">
             Николай Петров
           </b>
+          <p class="user-reviews__author-about">
+            25 лет, водитель трамвая
+          </p>
           <p class="user-reviews__text">
             &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
@@ -142,15 +174,21 @@
                 3,99 USD
               </span>
             </div>
-            <ul class="promo-item__features-list">
-              <li class="promo-item__features-list--included">
-                Розовый фильтр
+            <ul class="promo-item__features">
+              <li class="promo-item__feature  promo-item__feature--included">
+                <span>
+                  Розовый фильтр
+                </span>
               </li>
-              <li class="promo-item__features-list--included">
-                Смайлики
+              <li class="promo-item__feature  promo-item__feature--included">
+                <span>
+                  Смайлики
+                </span>
               </li>
-              <li class="promo-item__features-list--not-included">
-                Комментарии
+              <li class="promo-item__feature  promo-item__feature--not-included">
+                <span>
+                  Комментарии
+                </span>
               </li>
             </ul>
           </div>
@@ -162,7 +200,7 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer  container">
+    <footer class="page-footer">
       <section class="contacts">
         <h2 class="visually-hidden">
           Контактная информация
@@ -203,7 +241,7 @@
         </div>
       </section>
     </footer>
-    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Kj-_2SBnHa8aFxdGtB7fIeNJXJKRvLXH&amp;width=320&amp;height=200&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&amp;id=interactive-map"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=cAHmng-uo4cE_Jifk-RvYBtHxkVI4oY3&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;id=interactive-map&amp;sourceType=constructor&amp;scroll=true"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

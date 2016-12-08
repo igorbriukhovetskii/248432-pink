@@ -1,66 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width-device-width, initial-scale=1">
-  <title>Html Academy: Пинк</title>
-  <link rel="stylesheet" href="css/style.css">
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <title>Html Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
   <body>
-    <header class="page-header  container">
-      <div class="page-header__top">
-        <div class="logo">
-          <a class="logo__link" href="index.html">
-            <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
-          </a>
-          <h1 class="logo__description  visually-hidden">
-            Pink
-          </h1>
-        </div>
-        <nav class="main-nav">
-          <a class="main-nav__toggle" href="#">
-            Открыть меню
-            <span></span>
-          </a>
-          <ul class="main-nav__items  main-nav__items--closed  main-nav__items--no-js">
-            <li class="main-nav__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a>
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">
-                Html Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
+  <header class="page-header">
+    <div class="page-header__top">
+      <div class="logo">
+        <a class="logo__link">
+          <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
+        </a>
+        <h1 class="logo__description  visually-hidden">
+          Pink
+        </h1>
       </div>
-      <div class="page-header__bottom  page-header__bottom--inner">
-        <p>
-          Фотографии пользователей
-        </p>
-      </div>
-    </header>
-    <main class="main  container">
-      <section class="users-photos">
-        <h2 class="visually-hidden">
-          Фотографии пользователей
-        </h2>
-        <p class="users-photos__intro">
-          Взгляните на фотографии, которые выкладывают пользователи!
-          Видите, как не хватает ваших?
-        </p>
+      <nav class="main-nav">
+        <a class="main-nav__menu-toggle  main-nav__menu-toggle--no-js" href="#">
+          Открыть меню
+          <span></span>
+        </a>
+        <!--При отключенном Java Script применяется правило для классов с модификатором --no-js
+        Главное меню загружается в потоке в открытом состоянии-->
+        <ul class="main-nav__items  main-nav__items--no-js">
+          <li class="main-nav__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a>
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">
+              Html Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <p>
+        Фотографии<br>
+        пользователей
+      </p>
+    </div>
+    <div class="page-header__bottom">
+
+    </div>
+  </header>
+  <main class="main">
+    <section class="users-photos">
+      <h2 class="visually-hidden">
+        Фотографии пользователей
+      </h2>
+      <p class="users-photos__intro">
+        Взгляните на фотографии, которые выкладывают пользователи!
+        Видите, как не хватает ваших?
+      </p>
         <div class="user-photo user-photo--featured">
           <div class="user-photo__user-img    user-photo__user-img--featured">
             <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня">
@@ -76,11 +80,13 @@
               Прыгать или нет? Напишите в коментарии свой совет и
               смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
+            <div class="user-photo__likes">
+              <span>Нравится: 215</span>
+            </div>
           </div>
-          <div class="user-photo__likes">
-            <span>Нравится: 215</span>
-          </div>
+
         </div>
+      <div class="user-photos__wrapper">
         <div class="user-photo">
           <div class="user-photo__user-img">
             <img src="img/photo-1-mobile@1x.jpg" alt="Фото пользователя">
@@ -95,9 +101,9 @@
             <p class="user-photo__text">
               Вчера он на луну летал, сегодня в руки к нам попал.
             </p>
-          </div>
-          <div class="user-photo__likes">
-            <span>Нравится: 356</span>
+            <div class="user-photo__likes">
+              <span>Нравится: 356</span>
+            </div>
           </div>
         </div>
         <div class="user-photo">
@@ -114,9 +120,9 @@
             <p class="user-photo__text">
               Соседи будут рады!
             </p>
-          </div>
-          <div class="user-photo__likes">
-            <span>Нравится: 666</span>
+            <div class="user-photo__likes">
+              <span>Нравится: 666</span>
+            </div>
           </div>
         </div>
         <div class="user-photo">
@@ -133,9 +139,9 @@
             <p class="user-photo__text">
               Здесь могла быть ваша цитата о высоком и вечном.
             </p>
-          </div>
-          <div class="user-photo__likes">
-            <span>Нравится: 215</span>
+            <div class="user-photo__likes">
+              <span>Нравится: 215</span>
+            </div>
           </div>
         </div>
         <div class="user-photo">
@@ -152,9 +158,9 @@
             <p class="user-photo__text">
               Самая кубанская в мире!
             </p>
-          </div>
-          <div class="user-photo__likes">
-            <span>Нравится: 4</span>
+            <div class="user-photo__likes">
+              <span>Нравится: 4</span>
+            </div>
           </div>
         </div>
         <div class="user-photo">
@@ -171,9 +177,9 @@
             <p class="user-photo__text">
               Где снег-то?
             </p>
-          </div>
-          <div class="user-photo__likes">
-            <span>Нравится: 150</span>
+            <div class="user-photo__likes">
+              <span>Нравится: 150</span>
+            </div>
           </div>
         </div>
         <div class="user-photo">
@@ -190,17 +196,18 @@
             <p class="user-photo__text">
               Всем GM и взаимные лайки!
             </p>
-          </div>
-          <div class="user-photo__likes">
-            <span>Нравится: 2560</span>
+            <div class="user-photo__likes">
+              <span>Нравится: 2560</span>
+            </div>
           </div>
         </div>
-        <div class="users-photos__closing-text">
-          <p>
-            Затмите их всех!
-            Выкладывайте все, что накопилось в телефоне!
-          </p>
-        </div>
+      </div>
+      <div class="users-photos__closing-text">
+         <p>
+           Затмите их всех!
+           Выкладывайте все, что накопилось в телефоне!
+         </p>
+      </div>
       </section>
       <section class="photo-editor">
         <h2 class="visually-hidden">
@@ -209,27 +216,29 @@
         <div class="photo-editor__photo">
           <img src="img/photo-7-mobile@1x.jpg" alt="Фото пользователя">
         </div>
-        <div class="photo-editor__controls">
+        <div class="photo-editor__control-panel">
+          <div class="photo-editor__controls">
           <button class="photo-editor__button  photo-editor__button--crop" type="button">Обрезать</button>
           <button class="photo-editor__button  photo-editor__button--fill" type="button">Заливка</button>
           <button class="photo-editor__button  photo-editor__button--contrast" type="button">Контрастность</button>
         </div>
-        <div class="photo-editor__controls    range-slider">
+          <div class="photo-editor__controls    range-slider">
           <div class="range-slider__scale">
             <div class="range-slider__fill"></div>
           </div>
           <div class="range-slider__toggle"></div>
         </div>
-        <div class="photo-editor__upload">
+          <div class="photo-editor__upload">
           <button class="wide-button  photo-editor__upload-button" type="button">Запостить</button>
           <button class="wide-button  photo-editor__cancel-button" type="button">Отменить</button>
         </div>
+        </div>
       </section>
     </main>
-    <footer class="inner-page-footer  container">
+    <footer class="inner-page-footer">
       <div class="logo-block">
         <img class="logo-block__additional-img" src="http://placehold.it/61x40" alt="glasses" width="61" height="40">
-        <div class="logo">
+        <div class="logo  logo--footer">
           <a class="logo__link" href="index.html">
             Pink
           </a>
