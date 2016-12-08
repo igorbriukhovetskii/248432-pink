@@ -12,4 +12,3 @@ function toggleMenu(event) {
 }
 
   mainNavToggle.addEventListener("click", toggleMenu);
-
