@@ -1,0 +1,28 @@
+.photo-editor {
+  min-height: 757px;
+
+  @media @tablet-width {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    min-height: 511px;
+  }
+
+  @media @desktop-width {
+    min-height: 514px;
+  }
+}
+
+.photo-editor__photo {
+  margin: 0 auto;
+
+  @media @tablet-width {
+    margin: 0;
+    align-self: center;
+  }
+}
+
+.photo-editor__control-panel {
+  outline: 1px solid green;
+}

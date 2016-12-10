@@ -1,26 +1,67 @@
 .page-header {
-  min-height: 176px;
-  background: @main-bg-dark url("../img/bg-back-mobile@1x.jpg") no-repeat -190px -2px;
+  width: 100%;
+  min-height: 237px;
   outline: 1px solid red;
+  background: @main-bg-dark url("../img/bg-back-mobile@1x.jpg") no-repeat top;
+
+  @media @tablet-width {
+    background-size: cover;
+  }
+
+  &--no-js {
+    background-position: center;
+  }
 }
 
 .page-header__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  position: relative;
+  width: 100%;
   min-height: 66px;
-  padding: 0 20px;
   background-color: rgba(0, 0, 0, 0.3);
+
+  &--no-js {
+    background-color: @main-bg-dark;
+
+    @media @desktop-width {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--menu-opened {
+    background-color: @main-bg-dark;
+
+    @media @desktop-width {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+  }
 }
 
 .page-header__bottom {
   min-height: 110px;
-  padding: 0 20px;
-  color: #ffffff;
+
+  @media @tablet-width {
+    min-height: 330px;
+  }
+
+  @media @desktop-width {
+    min-height: 284px;
+  }
 }
 
-.page-header__bottom--inner {
-  min-height: 170px;
-  padding: 0 20px;
+.page-header p {
+  padding: 35px 20px;
+  font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 24px;
+  font-weight: 100;
   line-height: 1.2;
   color: #ffffff;
-  font-weight: 100;
+  text-align: center;
+
+  @media @tablet-width {
+    font-size: 50px;
+  }
 }

@@ -1,30 +1,96 @@
+.users-photos {
+  background-color: #ffffff;
+  outline: 1px solid red;
+}
+
 .users-photos__intro {
+  text-align: center;
   min-height: 184px;
   padding: 0 20px;
   font-size: 14px;
   line-height: 2.15;
   color: @main-bg-dark;
+
+  @media @tablet-width {
+    min-height: 228px;
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  @media @desktop-width {
+    min-height: 240px;
+  }
+}
+
+.user-photos__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  @media @tablet-width {
+    .container();
+  }
+
 }
 
 .user-photo {
-  margin-bottom: 18px;
-  outline: 1px solid blue;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-width: 280px;
+  min-height: 301px;
+  margin-top: 19px;
+  outline: 1px solid red;
+  vertical-align: top;
+
+  @media @tablet-width {
+    width: 300px;
+    height: 455px;
+    background-color: aqua;
+  }
+
+  @media @desktop-width {
+    height: 555px;
+    margin-top: 50px;
+  }
 }
 
 .user-photo--featured {
-  min-height: 329px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: 660px;
+    min-height: 630px;
+    background-color: #ffffff;
+  }
+
+  @media @desktop-width {
+    width: 100%;
+    min-height: 602px;
+  }
 }
 
+
 .user-photo__user-img {
+  align-self: center;
   width: 280px;
-  height: 180px;
   margin: 0 20px;
 }
 
 .user-photo__user-img--featured {
   width: 320px;
-  height: 137px;
   margin: 0;
+
+  @media @tablet-width {
+    width: 660px;
+    height: 509px;
+  }
+
+  @media @desktop-width {
+    width: 960px;
+    height: 506px;
+  }
 }
 
 .user-photo__user-img img {
@@ -47,11 +113,21 @@
 }
 
 .user-photo__comment {
+  align-self: center;
+  width: 100%;
+  position: relative;
   font-size: 14px;
   line-height: 1.75;
   background-color: @main-bg-light;
-  margin: 0 20px;
   padding: 18px 19px 15px 19px;
+
+  @media @tablet-width {
+    min-height: 121px;
+  }
+
+  @media @desktop-width {
+    min-height: 96px;
+  }
 }
 
 .user-photo__comment-text {
@@ -65,10 +141,26 @@
   font-size: 12px;
   line-height: 24px;
   color: @shade-of-red;
-  background-color: @main-bg-light;
+
+  @media @tablet-width {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 100px;
+  }
+
+  @media @desktop-width {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+  }
+
 }
 
 .users-photos__closing-text {
+  text-align: center;
   min-height: 152px;
   padding: 0 20px;
 }
@@ -88,8 +180,4 @@
 .photo-editor__photo img {
   width: 100%;
   height: 100%;
-}
-
-.users-photos {
-  outline: 1px solid red;
 }

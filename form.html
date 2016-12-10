@@ -2,57 +2,59 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Html Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header  container">
-      <div class="page-header__top">
+    <header class="page-header  page-header--no-js">
+      <div class="page-header__top  page-header__top--no-js">
         <div class="logo">
-          <a class="logo__link" href="index.html">
-            <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
-          </a>
-          <h1 class="logo__description visually-hidden">
-            Pink
-          </h1>
-        </div>
-        <nav class="main-nav">
-          <a class="main-nav__toggle" href="#">
-            Открыть меню
-            <span></span>
-          </a>
-          <ul class="main-nav__items  main-nav__items--closed  main-nav__items--no-js">
-            <li class="main-nav__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a>
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">
-                Html Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
+        <a class="logo__link" href="index.html">
+          <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
+        </a>
+        <h1 class="logo__description  visually-hidden">
+          Pink
+        </h1>
       </div>
-      <div class="page-header__bottom  page-header__bottom--inner">
+        <div class="main-nav__menu-toggle  main-nav__menu-toggle--no-js">
+        Открыть меню
+        <span></span>
+      </div>
+        <nav class="main-nav">
+        <!--При отключенном Java Script применяется правило для классов с модификатором no-js
+        Главное меню загружается в потоке в открытом состоянии-->
+        <ul class="main-nav__items  main-nav__items--no-js">
+          <li class="main-nav__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a>
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">
+              Html Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+      <div class="page-header__bottom">
         <p>
-          Конкурс на самое безбашеное путешествие с Пинк
+        Конкурс на самое безбашеное путешествие с Пинк
         </p>
       </div>
     </header>
-    <main class="main  container">
+    <main class="main">
       <form class="special-offer" action="#" method="post">
         <div class="special-offer__intro">
           <p>
@@ -61,85 +63,95 @@
             Пожалуйста, заполните форму ниже:
           </p>
         </div>
-        <div class="special-offer__name-input">
-          <label for="second-name">
-            Фамилия:
-          </label>
-          <input type="text" id="second-name" name="special-offer-second-name" placeholder="Укажите фамилию*" required>
-          <label for="first-name">
-            Имя:
-          </label>
-          <input type="text" id="first-name" name="special-offer-second-name" placeholder="Введите ваше имя*" required>
-          <label for="third-name">
-            Отчество:
-          </label>
-          <input type="text" id="third-name" name="special-offer-third-name" placeholder="Ну и отчество тоже">
-        </div>
-        <div class="special-offer__achievements">
-          <p>
-            Ваши безбашенные
-            достижения в путешествии
-          </p>
-          <input type="checkbox" id="achievement-1" name="achievement-1" checked>
-          <label for="achievement-1">
-            Сделал селфи с акулой
-          </label>
-          <input type="checkbox" id="achievement-2" name="achievement-2" checked>
-          <label for="achievement-2">
-            Обгорел на пляже
-          </label>
-          <input type="checkbox" id="achievement-3" name="achievement-3">
-          <label for="achievement-3">
-            Видел Чака Норриса
-          </label>
-          <input type="checkbox" id="achievement-4" name="achievement-4">
-          <label for="achievement-4">
-            Накупил сувениров
-          </label>
-          <input type="checkbox" id="achievement-5" name="achievement-5" checked>
-          <label for="achievement-5">
-            Удержал башню
-          </label>
-          <input type="checkbox" id="achievement-6" name="achievement-6">
-          <label for="achievement-6">
-            Разгромил отель
-          </label>
-        </div>
-        <div class="special-offer__contacts">
-          <label for="phone-number">
-            Номер телефона
-          </label>
-          <input type="tel" id="phone-number" name="special-offer-phone-number" placeholder="Номер, пожалуйста">
-          <label for="email">
-            Адресок почты
-          </label>
-          <input type="email" id="email" name="special-offer-email" placeholder="Введите почту*" required>
-        </div>
-        <div class="special-offer__app-name">
-          <p>
-            С каким приложением
-            путешествовали?
-          </p>
-          <input type="radio" id="apple-app" name="app-used" checked>
-          <label for="apple-app">
-            Pink для iOS
-          </label>
-          <input type="radio" id="android-app" name="app-used">
-          <label for="android-app">
-            Pink на Android
-          </label>
-          <input type="radio" id="windows-app" name="app-used">
-          <label for="windows-app">
-            Windows Phone
-          </label>
-        </div>
-        <div class="special-offer__comment">
-          <label for="comment">
-            Опишите свои эмоции
-          </label>
-          <textarea id="comment" name="user-comment">
-            Можно прям в красках, не стесняясь в выражениях
-          </textarea>
+        <div class="special-offer__wrapper">
+          <div class="special-offer__name-input">
+            <label for="second-name">
+              Фамилия:
+            </label>
+            <input type="text" id="second-name" name="special-offer-second-name" placeholder="Укажите фамилию*" required>
+            <label for="first-name">
+              Имя:
+            </label>
+            <input type="text" id="first-name" name="special-offer-second-name" placeholder="Введите ваше имя*" required>
+            <label for="third-name">
+              Отчество:
+            </label>
+            <input type="text" id="third-name" name="special-offer-third-name" placeholder="Ну и отчество тоже">
+          </div>
+          <div class="special-offer__achievements">
+            <fieldset>
+              <legend>
+                Ваши безбашенные
+                достижения в путешествии
+              </legend>
+              <input type="checkbox" id="achievement-1" name="achievement-1" checked>
+              <label for="achievement-1">
+                Сделал селфи с акулой
+              </label>
+              <input type="checkbox" id="achievement-2" name="achievement-2" checked>
+              <label for="achievement-2">
+                Обгорел на пляже
+              </label>
+              <input type="checkbox" id="achievement-3" name="achievement-3">
+              <label for="achievement-3">
+                Видел Чака Норриса
+              </label>
+              <input type="checkbox" id="achievement-4" name="achievement-4">
+              <label for="achievement-4">
+                Накупил сувениров
+              </label>
+              <input type="checkbox" id="achievement-5" name="achievement-5" checked>
+              <label for="achievement-5">
+                Удержал башню
+              </label>
+              <input type="checkbox" id="achievement-6" name="achievement-6">
+              <label for="achievement-6">
+                Разгромил отель
+              </label>
+            </fieldset>
+          </div>
+          <div class="special-offer__contacts">
+            <label for="phone-number">
+              Номер телефона
+            </label>
+            <input type="tel" id="phone-number" name="special-offer-phone-number" placeholder="Номер, пожалуйста">
+            <label for="email">
+              Адресок почты
+            </label>
+            <input type="email" id="email" name="special-offer-email" placeholder="Введите почту*" required>
+          </div>
+          <div class="special-offer__app-name">
+            <fieldset>
+              <legend>
+                С каким приложением путешествовали?
+              </legend>
+              <input type="radio" id="apple-app" name="app-used" checked>
+              <label for="apple-app">
+                Pink для iOS
+              </label>
+              <input type="radio" id="android-app" name="app-used">
+              <label for="android-app">
+                Pink на Android
+              </label>
+              <input type="radio" id="windows-app" name="app-used">
+              <label for="windows-app">
+                Windows Phone
+              </label>
+            </fieldset>
+          </div>
+          <div class="special-offer__comment">
+            <fieldset>
+              <legend>
+                Опишите свои эмоции
+              </legend>
+              <label for="comment" class="visually-hidden">
+                Комментарий к путешествию
+              </label>
+              <textarea id="comment" name="user-comment">
+                Можно прям в красках, не стесняясь в выражениях
+              </textarea>
+            </fieldset>
+          </div>
         </div>
         <div class="special-offer__submit">
           <button id="submit-form">Отправить форму</button>
@@ -149,10 +161,10 @@
         </div>
       </form>
     </main>
-    <footer class="inner-page-footer  container">
+    <footer class="inner-page-footer">
       <div class="logo-block">
         <img class="logo-block__additional-img" src="http://placehold.it/61x40" alt="glasses" width="61" height="40">
-        <div class="logo">
+        <div class="logo  logo--footer">
           <a class="logo__link" href="index.html">
             Pink
           </a>

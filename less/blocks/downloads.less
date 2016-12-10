@@ -1,21 +1,45 @@
 .downloads {
-  min-height: 557px;
-  color: #ffffff;
-  background-color: @downloads-bg;
+  padding-top: 110px;
   outline: 1px solid red;
+
+  @media @tablet-width {
+    padding-top: 74px;
+  }
+
+  @media @desktop-width {
+    padding-top: 99px;
+  }
 }
 
 .downloads__intro {
   min-height: 286px;
-  background:
-    url("../img/iphone-hand-mobile@1x.png") no-repeat 0 0,
-    url("../img/bg-back-mobile@1x.jpg") no-repeat -190px -178px;
-  background-color: @downloads-bg;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
+  outline: 1px dotted red;
+
+  @media @tablet-width {
+    display: none;
+  }
 }
 
-.downloads p {
-  font-size: 14px;
-  line-height: 1.7;
-  font-weight: 100;
+.downloads__main {
+  min-height: 271px;
+  background-color: @downloads-bg;
   color: #ffffff;
+  outline: 1px dotted red;
+
+  @media @tablet-width {
+    min-height: 545px;
+    background-color: transparent;
+    background: url("../img/iphone-hand-mobile@1x.png") no-repeat right bottom;
+    background-size: contain;
+  }
+
+  @media @desktop-width {
+    min-height: 644px;
+    background-position: center;
+  }
+}
+
+p.downloads__platforms-list {
+  font-size: 18px;
 }

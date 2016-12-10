@@ -1,7 +1,18 @@
 .inner-page-footer {
   min-height: 284px;
   padding: 0 20px;
+  background-color: #ffffff;
   outline: 1px solid red;
+
+  @media @tablet-width {
+    min-height: 127px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media @desktop-width {
+    min-height: 196px;
+  }
 }
 
 .inner-page-footer__developed-by {

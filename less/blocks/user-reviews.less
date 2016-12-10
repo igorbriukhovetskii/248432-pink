@@ -1,18 +1,66 @@
 .user-reviews {
-  min-height: 377px;
+  min-height: 352px;
   outline: 1px solid red;
+  background-color: #ffffff;
+
+  @media @tablet-width {
+    min-height: 339px;
+  }
+
+  @media @tablet-width {
+    min-height: 414px;
+  }
 }
 
 .user-reviews__review {
   padding: 0 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .user-reviews__author-name {
+  font-family: "Open Sans Bold", Arial, sans-serif;
   font-size: 18px;
+  font-weight: bold;
   line-height: 1.67;
+  color: #000000;
+
+  @media @tablet-width {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  @media @desktop-width {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+}
+
+.user-reviews__author-about {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+    font-size: 14px;
+    line-height: 2.14;
+  }
+
+  @media @desktop-width {
+    font-size: 18px;
+    line-height: 1.66;
+  }
 }
 
 .user-reviews__text {
   font-size: 14px;
   line-height: 2.14;
+
+  @media @tablet-width {
+    font-size: 18px;
+    line-height: 1.66;
+  }
+
+  @media @desktop-width {
+    order: -1;
+  }
 }
