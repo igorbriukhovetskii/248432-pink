@@ -18,18 +18,26 @@
 }
 
 .main-nav__menu-toggle {
-  width: 90px;
+  width: 50px;
   display: flex;
   justify-content: flex-end;
-  padding: 20px;
+  margin: 20px;
   font-size: 0;
 
+  &--close {
+    width: 20px;
+  }
+
   @media @tablet-width {
-    padding: 43px 20px;
+    margin: 43px 20px;
   }
 
   @media @desktop-width {
     display: none;
+  }
+
+  &:hover {
+    cursor: pointer;
   }
 }
 
