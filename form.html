@@ -7,53 +7,52 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__top">
-        <div class="logo">
-          <a class="logo__link">
-            <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
-          </a>
-          <h1 class="logo__description  visually-hidden">
-            Pink
-          </h1>
-        </div>
-        <nav class="main-nav">
-          <a class="main-nav__menu-toggle  main-nav__menu-toggle--no-js" href="#">
-            Открыть меню
-            <span></span>
-          </a>
-          <!--При отключенном Java Script применяется правило для классов с модификатором --no-js
-          Главное меню загружается в потоке в открытом состоянии-->
-          <ul class="main-nav__items  main-nav__items--no-js">
-            <li class="main-nav__item">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">
-                Фотографии
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a>
-                Конкурс
-              </a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru">
-                Html Academy
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <p>
-          Конкурс на самое безбашеное путешествие с Пинк
-        </p>
+    <header class="page-header  page-header--no-js">
+      <div class="page-header__top  page-header__top--no-js">
+      <div class="logo">
+        <a class="logo__link">
+          <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
+        </a>
+        <h1 class="logo__description  visually-hidden">
+          Pink
+        </h1>
       </div>
+      <div class="main-nav__menu-toggle  main-nav__menu-toggle--no-js" href="#">
+        Открыть меню
+        <span></span>
+      </div>
+      <nav class="main-nav">
+        <!--При отключенном Java Script применяется правило для классов с модификатором --no-js
+        Главное меню загружается в потоке в открытом состоянии-->
+        <ul class="main-nav__items  main-nav__items--no-js">
+          <li class="main-nav__item">
+            <a>
+              Главная
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">
+              Фотографии
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">
+              Конкурс
+            </a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru">
+              Html Academy
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
       <div class="page-header__bottom">
-
-      </div>
+      <p>
+      Конкурс на самое безбашеное путешествие с Пинк
+      </p>
+    </div>
     </header>
     <main class="main">
       <form class="special-offer" action="#" method="post">

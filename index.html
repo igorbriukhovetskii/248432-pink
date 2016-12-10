@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <div class="page-header__top">
+    <header class="page-header  page-header--no-js">
+      <div class="page-header__top  page-header__top--no-js">
         <div class="logo">
           <a class="logo__link">
             <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
@@ -17,11 +17,11 @@
             Pink
           </h1>
         </div>
+        <div class="main-nav__menu-toggle  main-nav__menu-toggle--no-js" href="#">
+          Открыть меню
+          <span></span>
+        </div>
         <nav class="main-nav">
-          <a class="main-nav__menu-toggle  main-nav__menu-toggle--no-js" href="#">
-            Открыть меню
-            <span></span>
-          </a>
           <!--При отключенном Java Script применяется правило для классов с модификатором --no-js
           Главное меню загружается в потоке в открытом состоянии-->
           <ul class="main-nav__items  main-nav__items--no-js">

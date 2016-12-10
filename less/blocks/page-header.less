@@ -1,27 +1,54 @@
 .page-header {
+  width: 100%;
   min-height: 237px;
   outline: 1px solid red;
   background: @main-bg-dark url("../img/bg-back-mobile@1x.jpg") no-repeat top;
 
-  .container();
-
   @media @tablet-width {
+    background-size: cover;
   }
 
-  @media @desktop-width {
+  &--no-js {
+    background-position: center;
   }
 }
 
 .page-header__top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   position: relative;
-  min-height: 176px;
+  width: 100%;
+  min-height: 66px;
+  background-color: rgba(0, 0, 0, 0.3);
+
+  &--no-js {
+    background-color: @main-bg-dark;
+
+    @media @desktop-width {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &--menu-opened {
+    background-color: @main-bg-dark;
+
+    @media @desktop-width {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+  }
+}
+
+.page-header__bottom {
+  min-height: 110px;
 
   @media @tablet-width {
-    min-height: 184px;
+    min-height: 330px;
   }
 
   @media @desktop-width {
-    min-height: 209px;
+    min-height: 284px;
   }
 }
 

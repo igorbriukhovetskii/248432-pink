@@ -1,11 +1,10 @@
 .users-photos {
   background-color: #ffffff;
   outline: 1px solid red;
-
-  .container();
 }
 
 .users-photos__intro {
+  text-align: center;
   min-height: 184px;
   padding: 0 20px;
   font-size: 14px;
@@ -28,9 +27,17 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+
+  @media @tablet-width {
+    .container();
+  }
+
 }
 
 .user-photo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   min-width: 280px;
   min-height: 301px;
   margin-top: 19px;
@@ -50,6 +57,7 @@
 }
 
 .user-photo--featured {
+  margin: 0 auto;
   min-height: 329px;
 
   @media @tablet-width {
@@ -64,7 +72,9 @@
   }
 }
 
+
 .user-photo__user-img {
+  align-self: center;
   width: 280px;
   height: 180px;
   margin: 0 20px;
@@ -106,11 +116,12 @@
 }
 
 .user-photo__comment {
+  align-self: center;
+  width: 100%;
   position: relative;
   font-size: 14px;
   line-height: 1.75;
   background-color: @main-bg-light;
-  margin: 0 20px;
   padding: 18px 19px 15px 19px;
 
   @media @tablet-width {
@@ -152,6 +163,7 @@
 }
 
 .users-photos__closing-text {
+  text-align: center;
   min-height: 152px;
   padding: 0 20px;
 }

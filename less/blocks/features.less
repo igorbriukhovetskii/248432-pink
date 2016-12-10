@@ -2,7 +2,6 @@
   background-color: @main-bg-light;
   outline: 1px solid red;
 
-  .container();
   .clearfix();
 
   @media @desktop-width {
@@ -29,8 +28,8 @@
   outline: 1px solid red;
 
   @media @tablet-width {
+    width: 50%;
     float: right;
-    width: 340px;
     min-height: 481px;
   }
 
@@ -60,9 +59,14 @@
 
 .features__illustrations {
 
+  @media @tablet-width {
+    width: 50%;
+  }
+
   @media @desktop-width {
+    width: auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     outline: 1px solid green;
     order: -1;
   }
@@ -74,11 +78,12 @@
   outline: 1px solid red;
 
   @media @tablet-width {
-    width: 300px;
+    width: 100%;
     min-height: 481px;
   }
 
   @media @desktop-width {
+    width: 300px;
     min-height: 301px;
   }
 }

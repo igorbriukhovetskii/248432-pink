@@ -1,12 +1,19 @@
 .downloads {
+  padding-top: 110px;
   outline: 1px solid red;
+
+  @media @tablet-width {
+    padding-top: 74px;
+  }
+
+  @media @desktop-width {
+    padding-top: 99px;
+  }
 }
 
 .downloads__intro {
   min-height: 286px;
-  background:
-    url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom,
-    @main-bg-dark url("../img/bg-back-mobile@1x.jpg") no-repeat bottom;
+  background: url("../img/iphone-hand-mobile@1x.png") no-repeat left bottom;
   outline: 1px dotted red;
 
   @media @tablet-width {
