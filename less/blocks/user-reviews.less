@@ -1,36 +1,38 @@
 .user-reviews {
-  min-height: 352px;
-  outline: 1px solid red;
+  text-align: center;
   background-color: #ffffff;
 
   @media @tablet-width {
-    min-height: 339px;
-  }
-
-  @media @tablet-width {
-    min-height: 414px;
+    padding: 31px 0;
   }
 }
 
 .user-reviews__review {
+  display: none;
   padding: 0 20px;
-  display: flex;
   flex-direction: column;
+
+  @media @desktop-width {
+    padding-bottom: 20px;
+  }
 }
 
 .user-reviews__author-name {
-  font-family: "Open Sans Bold", Arial, sans-serif;
+  padding: 42px 10px 10px;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.67;
   color: #000000;
 
   @media @tablet-width {
+    padding-top: 24px;
+    padding-bottom: 2px;
     font-size: 20px;
     line-height: 1.5;
   }
 
   @media @desktop-width {
+    padding-bottom: 3px;
     font-size: 24px;
     line-height: 1.25;
   }
@@ -52,15 +54,77 @@
 }
 
 .user-reviews__text {
+  padding: 3px 0 10px;
   font-size: 14px;
-  line-height: 2.14;
+  line-height: 2.15;
 
   @media @tablet-width {
     font-size: 18px;
-    line-height: 1.66;
+    line-height: 1.67;
+    order: -1;
   }
 
   @media @desktop-width {
-    order: -1;
+    padding: 154px 70px 12px;
   }
+}
+
+.user-reviews__text span {
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.user-reviews input {
+  display: none;
+}
+
+.user-reviews__toggle {
+  display: flex;
+  justify-content: center;
+
+  @media @tablet-width {
+    padding-top: 12px;
+  }
+
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.user-reviews__toggle label {
+  box-sizing: content-box;
+  width: 6px;
+  height:6px;
+  margin: 23px 7px 42px;
+  border: 3px solid @main-bg-light;
+  border-radius: 50%;
+  background-color: #bec2c7;
+
+  &:hover {
+    background-color: #7e868f;
+  }
+
+  &:active {
+    background-color: #e9ebec;
+  }
+}
+
+#review-control-1:checked ~ .user-reviews__toggle label[for="review-control-1"],
+#review-control-2:checked ~ .user-reviews__toggle label[for="review-control-2"],
+#review-control-3:checked ~ .user-reviews__toggle label[for="review-control-3"]{
+  background-color: #ffffff;
+  border-color: @main-bg-dark;
+}
+
+#review-control-1:checked ~ .user-reviews__review--1 {
+  display: flex;
+}
+
+#review-control-2:checked ~ .user-reviews__review--2 {
+  display: flex;
+}
+
+#review-control-3:checked ~ .user-reviews__review--3 {
+  display: flex;
 }

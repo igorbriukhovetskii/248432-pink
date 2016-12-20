@@ -1,9 +1,59 @@
 .logo {
-  width: 20%;
-  padding: 20px;
+  width: 100%;
+  padding: 21px 20px;
+
+  &--no-js,
+  &--nav-opened {
+    padding-bottom: 23px;
+    border-bottom: 1px solid #000000;
+  }
 
   @media @tablet-width {
-    padding: 43px 20px;
-    margin-left: 72px;
+    padding: 43px 20px 42px 92px;
+
+    &--no-js,
+    &--nav-opened {
+      border-bottom: 1px solid #000000;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 61px;
+      height: 40px;
+      top: 27px;
+      left: 20px;
+      background: transparent url("../img/glasses-tablet.png") no-repeat 0 0;
+    }
+  }
+
+  @media @desktop-width {
+    padding-left: 82px;
+    width: 30%;
+
+    &::before {
+      left: 10px;
+    }
+  }
+}
+
+.logo img {
+  width: 75px;
+  height: 24px;
+  vertical-align: bottom;
+}
+
+.logo__link {
+  cursor: pointer;
+  fill: #ffffff;
+
+  &:hover {
+    fill: @shade-of-red;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
   }
 }

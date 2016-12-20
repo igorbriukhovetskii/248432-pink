@@ -7,23 +7,31 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
+    <!--При отключенном Java Script применяется правило для классов с модификатором no-js
+    Главное меню загружается в потоке в открытом состоянии-->
     <header class="page-header  page-header--no-js">
-      <div class="page-header__top  page-header__top--no-js">
-        <div class="logo">
-          <img src="http://placehold.it/75x22" width="75" height="22" alt="PINK">
+      <div class="page-header__top">
+        <div class="logo  logo--no-js">
+          <a class="logo__link">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74.426px" height="22.859px" viewBox="0 0 74.426 22.859" enable-background="new 0 0 74.426 22.859" xml:space="preserve">
+               <g>
+               <path d="M0,1.449c0-0.708,0.58-1.288,1.256-1.288h7.18c5.087,0,8.436,2.704,8.436,7.147v0.064 c0,4.861-4.057,7.373-8.854,7.373H2.544v6.825c0,0.708-0.58,1.288-1.288,1.288C0.58,22.859,0,22.279,0,21.571V1.449z M8.114,12.428 c3.734,0,6.182-1.996,6.182-4.958V7.405c0-3.22-2.415-4.894-6.054-4.894H2.544v9.917H8.114z"/>
+                <path d="M21.729,1.288C21.729,0.58,22.308,0,22.983,0c0.709,0,1.288,0.58,1.288,1.288v20.283 c0,0.708-0.579,1.288-1.288,1.288c-0.676,0-1.255-0.58-1.255-1.288V1.288z"/>
+                <path d="M30.87,1.32c0-0.676,0.579-1.256,1.256-1.256h0.354c0.58,0,0.934,0.29,1.288,0.74l13.684,17.45V1.256 C47.451,0.58,47.998,0,48.707,0c0.676,0,1.223,0.58,1.223,1.256v20.348c0,0.676-0.482,1.191-1.158,1.191h-0.129 c-0.548,0-0.934-0.322-1.32-0.772L33.349,4.153v17.45c0,0.676-0.547,1.256-1.255,1.256c-0.677,0-1.224-0.58-1.224-1.256V1.32z"/>
+                <path d="M56.3,1.288C56.3,0.58,56.879,0,57.556,0c0.708,0,1.287,0.58,1.287,1.288v12.331L71.689,0.451 C71.979,0.193,72.269,0,72.688,0c0.676,0,1.224,0.612,1.224,1.256c0,0.354-0.161,0.644-0.419,0.901l-7.984,7.92l8.564,10.561 c0.225,0.29,0.354,0.547,0.354,0.934c0,0.676-0.579,1.288-1.287,1.288c-0.483,0-0.806-0.258-1.03-0.58l-8.403-10.463l-4.862,4.861 v4.894c0,0.708-0.579,1.288-1.287,1.288c-0.677,0-1.256-0.58-1.256-1.288V1.288z"/>
+                </g>
+              </svg>
+          </a>
           <h1 class="logo__description  visually-hidden">
             Pink
           </h1>
         </div>
-        <div class="main-nav__menu-toggle  main-nav__menu-toggle--no-js">
-          Открыть меню
-          <span></span>
-        </div>
-        <nav class="main-nav">
-          <!--При отключенном Java Script применяется правило для классов с модификатором no-js
-          Главное меню загружается в потоке в открытом состоянии-->
-          <ul class="main-nav__items  main-nav__items--no-js">
-            <li class="main-nav__item">
+        <nav class="main-nav  main-nav--closed  main-nav--no-js">
+          <div class="main-nav__menu-toggle">
+            Открыть меню
+          </div>
+          <ul class="main-nav__items">
+            <li class="main-nav__item  main-nav__item--active">
               <a>
                 Главная
               </a>
@@ -40,7 +48,7 @@
             </li>
             <li class="main-nav__item">
               <a href="https://htmlacademy.ru">
-                Html Academy
+                <span class="uppercase">Html</span> Academy
               </a>
             </li>
           </ul>
@@ -48,23 +56,27 @@
       </div>
       <div class="page-header__bottom">
         <section class="downloads">
-          <div class="downloads__intro">
-
-          </div>
-          <div class="downloads__main">
+          <div class="downloads__content">
             <h2 class="visually-hidden">
               Загрузки
             </h2>
             <p class="downloads__slogan">
               Взгляните на жизнь иначе!
             </p>
-            <div class="downloads__button-wrapper">
-              <button class="wide-button  downloads__download-button">Скачать приложение</button>
-            </div>
-            <div class="downloads__apps-wrapper">
-              <a class="downloads__apple-store" href="#">Apple Store</a>
-              <a class="downloads__android-market" href="#">Google Play</a>
-              <a class="downloads__windows-store" href="#">Windows Store</a>
+            <a class="downloads__download-button" href="http://www.apple.com/ru/itunes/">Скачать приложение</a>
+            <div class="downloads__app-stores">
+              <a class="downloads__apple-store" href="http://www.apple.com/ru/itunes/">
+                Apple Store
+                <img src="img/logo-apple.svg" alt="Логотип Apple" width="47" height="56">
+              </a>
+              <a class="downloads__android-market" href="https://play.google.com/store">
+                Google Play
+                <img src="img/logo-android.svg" alt="Логотип Android" width="43" height="47">
+              </a>
+              <a class="downloads__windows-store" href="https://www.microsoft.com/en-us/store/apps/windows">
+                Windows Store
+                <img src="img/logo-microsoft.svg" alt="Логотип Microsoft" width="44" height="41">
+              </a>
             </div>
             <p class="downloads__platforms-list">
               Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8
@@ -100,47 +112,40 @@
               Меняет мир вокруг
             </h3>
             <p>
-              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+              Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект
             </p>
           </div>
           <div class="features__item">
+
             <h3>
-              Заводит новых друзей
+              Заводит новых&nbsp;друзей
             </h3>
             <p>
               Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых
             </p>
           </div>
         </div>
-        <div class="features__illustrations">
-          <div class="features__illustration">
-
-          </div>
-          <div class="features__illustration">
-
-          </div>
-          <div class="features__illustration">
-
-          </div>
-        </div>
         <div class="features__research">
           <h3>
-            Эффект на 24 часа!
+            Эффект на&nbsp;24&nbsp;часа!
           </h3>
           <p>
             Британские ученые провели исследования и доказали,
-            что положительный эффект от использования приложения длится целые сутки!
+            что&nbsp;положительный эффект от&nbsp;использования&nbsp;приложения длится целые сутки!
           </p>
-          <a>
-
+          <a href="#">
+            Узнать больше об исследовании
           </a>
         </div>
       </section>
-      <section class="user-reviews  slider">
+      <section class="user-reviews">
         <h2 class="visually-hidden">
           Отзывы пользователей
         </h2>
-        <div class="user-reviews__review  slider__slider-item">
+        <input id="review-control-1" name="review-select" type="radio" checked>
+        <input id="review-control-2" name="review-select" type="radio">
+        <input id="review-control-3" name="review-select" type="radio">
+        <div class="user-reviews__review  user-reviews__review--1">
           <b class="user-reviews__author-name">
             Николай Петров
           </b>
@@ -148,53 +153,133 @@
             25 лет, водитель трамвая
           </p>
           <p class="user-reviews__text">
+            <span>&laquo;</span>Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!<span>&raquo;</span>
+          </p>
+        </div>
+        <div class="user-reviews__review  user-reviews__review--2">
+          <b class="user-reviews__author-name">
+            Михаил Кузнецов
+          </b>
+          <p class="user-reviews__author-about">
+            35 лет, владелец парохода
+          </p>
+          <p class="user-reviews__text">
             &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
           </p>
         </div>
-        <div class="slider__controls">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="user-reviews__review  user-reviews__review--3">
+          <b class="user-reviews__author-name">
+            Евгений Михайлов
+          </b>
+          <p class="user-reviews__author-about">
+            46 лет, врач-стоматолог
+          </p>
+          <p class="user-reviews__text">
+            &laquo;Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;
+          </p>
+        </div>
+        <div class="user-reviews__toggle">
+          <label for="review-control-1"></label>
+          <label for="review-control-2"></label>
+          <label for="review-control-3"></label>
         </div>
       </section>
       <section class="promo">
         <h2 class="visually-hidden">
-          Специальные предложения
+          Наши тарифы
         </h2>
-        <div class="promo-items slider">
-          <div class="promo-item slider__slider-item">
-            <div class="promo-item__header">
-              <b>
-                Стандарт
-              </b>
-              <span>
-                3,99 USD
-              </span>
-            </div>
-            <ul class="promo-item__features">
-              <li class="promo-item__feature  promo-item__feature--included">
+          <input id="table-control-1" name="plan-select" type="radio">
+          <input id="table-control-2" name="plan-select" type="radio" checked>
+          <input id="table-control-3" name="plan-select" type="radio">
+        <table class="promo__price">
+          <thead class="promo__header">
+            <tr>
+              <td class="promo__empty"></td>
+              <td class="promo__plan">
                 <span>
-                  Розовый фильтр
+                  База
                 </span>
-              </li>
-              <li class="promo-item__feature  promo-item__feature--included">
+                <span class="promo__cost">
+                  1,99 usd
+                </span>
+              </td>
+              <td class="promo__plan">
                 <span>
-                  Смайлики
+                  Стандарт
                 </span>
-              </li>
-              <li class="promo-item__feature  promo-item__feature--not-included">
+                <span class="promo__cost">
+                  3,99 usd
+                </span>
+              </td>
+              <td class="promo__plan">
                 <span>
-                  Комментарии
+                  Анлим
                 </span>
-              </li>
-            </ul>
-          </div>
-          <div class="slider__controls">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+                <span class="promo__cost">
+                  9,99 usd
+                </span>
+              </td>
+            </tr>
+          </thead>
+          <tr>
+            <td class="promo__features">
+              Розовый фильтр
+            </td>
+            <td class="promo__feature  promo__feature--included">
+              Розовый фильтр
+              <span class="promo__checkbox"></span>
+            </td>
+            <td class="promo__feature  promo__feature--included">
+              Розовый фильтр
+              <span class="promo__checkbox"></span>
+            </td>
+            <td class="promo__feature  promo__feature--included">
+              Розовый фильтр
+              <span class="promo__checkbox"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="promo__features">
+              Смайлики
+            </td>
+            <td class="promo__feature">
+              Смайлики
+              <span class="promo__checkbox"></span>
+            </td>
+            <td class="promo__feature  promo__feature--included">
+              Смайлики
+              <span class="promo__checkbox"></span>
+            </td>
+            <td class="promo__feature  promo__feature--included">
+              Смайлики
+              <span class="promo__checkbox"></span>
+            </td>
+          </tr>
+          <tr>
+            <td class="promo__features">
+              Комментарии
+            </td>
+            <td class="promo__feature">
+              Комментарии
+              <span class="promo__checkbox"></span>
+            </td>
+            <td class="promo__feature">
+              Комментарии
+              <span class="promo__checkbox"></span>
+            </td>
+            <td class="promo__feature  promo__feature--included">
+              Комментарии
+              <span class="promo__checkbox"></span>
+            </td>
+          </tr>
+        </table>
+        <div class="promo__toggle">
+          <label for="table-control-1"></label>
+          <label for="table-control-2"></label>
+          <label for="table-control-3"></label>
         </div>
       </section>
     </main>
@@ -210,33 +295,33 @@
           </p>
         </div>
         <div class="contacts__phone">
-          <b>
+          <span>
             Звоните:
-          </b>
+          </span>
           <a href="tel:+78125556666">
             +7&nbsp;(812)&nbsp;555-66-66
           </a>
         </div>
         <div class="contacts__email">
-          <b>
+          <span>
             Пишите:
-          </b>
+          </span>
           <a href="mailto:mail@htmlacademy.ru">
             mail&#64;htmlacademy.ru
           </a>
         </div>
         <div class="contacts__address">
-          <b>
+          <span>
             Приезжайте в гости:
-          </b>
+          </span>
           <p>
             ул. Большая
             Конюшенная, 19/8
           </p>
         </div>
-        <div class="contacts__map" id="interactive-map">
+      </section>
+      <section class="map" id="interactive-map">
 
-        </div>
       </section>
     </footer>
     <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=cAHmng-uo4cE_Jifk-RvYBtHxkVI4oY3&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;id=interactive-map&amp;sourceType=constructor&amp;scroll=true"></script>
