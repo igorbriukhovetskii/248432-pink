@@ -1,10 +1,27 @@
 .photo-editor {
+  width: 100%;
+  background-color: @main-bg-light;
+
+  @media @desktop-width {
+    background-color: #ffffff;
+  }
+}
+
+.photo-editor__wrapper {
+
   padding-right: 4px;
   background-color: @main-bg-light;
 
   @media @tablet-width {
     display: flex;
+    justify-content: space-between;
     min-height: 511px;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  @media @desktop-width {
+    width: 940px;
   }
 }
 
@@ -16,11 +33,12 @@
   @media @tablet-width {
     width: 340px;
     height: 511px;
-    margin: 0 auto;
+    //margin: 0 auto;
   }
 
   @media @desktop-width {
     width: 480px;
+    padding-left: 25px;
   }
 }
 
@@ -41,11 +59,11 @@
   @media @tablet-width {
     width: 320px;
     height: 511px;
-    margin: 0 auto;
+    padding-left: 34px;
   }
 
   @media @desktop-width {
-    width: 480px;
+    width: 550px;
   }
 }
 
@@ -73,15 +91,14 @@
   @media @tablet-width {
     justify-content: space-around;
     flex-direction: column;
-    width: 80px;
+    width: 68px;
     height: 216px;
+    padding-right: 20px;
   }
 
   @media @desktop-width {
+    padding-right: 0;
     margin-left: 0;
-  }
-
-  @media @desktop-width {
     width: 72px;
   }
 }
@@ -94,12 +111,12 @@
   @media @tablet-width {
     width: 202px;
     height: 216px;
-    margin-right: 35px;
+    margin-right: 20px;
   }
 
   @media @desktop-width {
     width: 288px;
-    margin-right: 96px;
+    margin-right: 86px;
   }
 }
 
@@ -221,6 +238,7 @@
   border: 3px solid transparent;
   border-radius: 27px;
   background: transparent;
+  cursor: pointer;
 
   @media @tablet-width {
     width: 260px;
@@ -286,6 +304,7 @@
   height: 44px;
   font-size: 0;
   opacity: 0.3;
+  cursor: pointer;
 
   @media @tablet-width {
     width: 22px;

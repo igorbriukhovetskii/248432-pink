@@ -10,6 +10,21 @@
   }
 }
 
+.special-offer__contacts fieldset {
+
+  @media @tablet-width {
+    width: 616px;
+    min-height: 320px;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  @media @desktop-width {
+    width: 936px;
+    min-height: 158px;
+  }
+}
+
 .special-offer__intro {
   display: flex;
   flex-direction: column;
@@ -20,8 +35,10 @@
   font-weight: normal;
   line-height: 2.15;
   color: @main-bg-dark;
-  padding: 0 20px;
+  padding: 0;
   background-color: #ffffff;
+
+  .container();
 
   @media @tablet-width {
     min-height: 200px;
@@ -123,6 +140,7 @@
 
   @media @tablet-width {
     width: 620px;
+    padding-bottom: 40px;
     margin: 0 auto;
     background-color: #ffffff;
   }
@@ -133,15 +151,30 @@
   }
 }
 
-.special-offer__achievements fieldset {
-  padding-bottom: 47px;
+.special-offer__achievements .special-offer__wrapper {
+  padding-bottom: 27px;
+
+  @media @tablet-width {
+    padding-bottom: 47px;
+  }
 
   @media @desktop-width {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-right: 17px;
-    padding-left: 55px;
+    width: 936px;
+    margin: 0 auto;
+    padding:10px 58px 0 58px;
+  }
+}
+
+.special-offer__achievements fieldset {
+
+  @media @desktop-width {
+    width: 936px;
+    min-height: 244px;
+    margin: 0;
+    padding: 0;
   }
 }
 
@@ -175,9 +208,9 @@
   }
 
   @media @desktop-width {
-    width: 280px;
-    margin: 0 auto 43px 0;
-    padding: 0 0 0 59px;
+    width: auto;
+    margin: 0;
+    padding: 0 0 81px 59px;
   }
 }
 
@@ -189,6 +222,7 @@
 
     &--2 {
       order: 3;
+      min-width: 258px;
 
     }
     &--3 {
@@ -197,19 +231,29 @@
 
     &--4 {
       order: 4;
+      min-width: 240px;
     }
 
     &--5 {
       order: 2;
+      min-width: 208px;
 
     }
 
     &--6 {
       order: 5;
-
     }
   }
 }
+
+.special-offer__achievement label {
+
+  @media @desktop-width {
+
+    vertical-align: bottom;
+  }
+}
+
 
 .special-offer__achievement:last-child {
   margin-bottom: 0;
@@ -224,6 +268,11 @@
   height: 39px;
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
+  cursor: pointer;
+
+  @media @desktop-width {
+    top: -5px;
+  }
 }
 
 .special-offer__achievement input[type="checkbox"]:checked + .special-offer__checkbox::before,
@@ -256,35 +305,45 @@
   background-color: #ffffff;
 
   @media @tablet-width {
-    width: 100%;
+    width: 620px;
     min-height: 380px;
-    padding: 8px 20px 0;
+    padding: 8px 0 0;
     order: -1;
+    margin: 0 auto;
   }
 
   @media @desktop-width {
     min-height: 200px;
+    width: 100%;
     padding: 9px 0 0 0;
   }
 }
 
-.special-offer__contacts fieldset {
+.special-offer__contacts .special-offer__container {
+
+  @media @tablet-width {
+    display: flex;
+    flex-direction: column;
+    width: 616px;
+    padding-top: 5px;
+    margin: 0 auto;
+  }
 
   @media @desktop-width {
-    display: flex;
     justify-content: space-between;
-    width: 940px;
-    margin: 0 auto;
-    padding: 33px 58px 0;
+    flex-direction: row;
+    width: 820px;
+    padding-top: 0;
   }
 }
 
-.special-offer__contacts legend {
+.special-offer__contacts legend span {
   display: none;
 
   @media @tablet-width {
     display: block;
     padding: 0 31px;
+    text-align: center;
   }
 }
 
@@ -302,10 +361,10 @@
 
   @media @desktop-width {
     width: 375px;
-    margin: 0;
-    padding: 0;
+    margin: 32px 0 0 0;
   }
 }
+
 
 .special-offer__contacts label {
   display: block;
@@ -402,6 +461,22 @@ label[for="email"] span {
     box-sizing: content-box;
     margin-bottom: 38px;
     padding: 0 24px;
+    text-align: center;
+  }
+}
+
+.special-offer__app-names fieldset {
+
+  width: 280px;
+  margin: 0 auto;
+
+  @media @tablet-width {
+    width: 616px;
+    margin: 0 auto;
+  }
+
+  @media @desktop-width {
+    width: auto;
   }
 }
 
@@ -447,6 +522,7 @@ label[for="email"] span {
   border: 3px solid #e5e5e5;
   border-radius: 50%;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .special-offer__app-name input[type="radio"]:checked + .special-offer__radio-btn::before {
@@ -491,7 +567,7 @@ label[for="email"] span {
   }
 
   @media @desktop-width {
-    width: 940px;
+    width: 936px;
   }
 }
 
@@ -529,6 +605,7 @@ label[for="email"] span {
   @media @desktop-width {
     width: 820px;
     height: 127px;
+    margin-bottom: 30px;
   }
 }
 

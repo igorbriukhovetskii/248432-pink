@@ -1,19 +1,44 @@
 .user-reviews {
+  position: relative;
   text-align: center;
   background-color: #ffffff;
 
+  .container();
+
   @media @tablet-width {
-    padding: 31px 0;
+    padding: 29px 0 26px 0;
+  }
+
+  @media @desktop-width {
+    padding: 26px 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 71px;
+      left: 433px;
+      width: 79px;
+      height: 63px;
+      background: url("../img/quotes.png") no-repeat;
+    }
   }
 }
 
 .user-reviews__review {
   display: none;
-  padding: 0 20px;
+  //padding: 0 20px;
   flex-direction: column;
 
+  @media @tablet-width {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
   @media @desktop-width {
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -65,7 +90,7 @@
   }
 
   @media @desktop-width {
-    padding: 154px 70px 12px;
+    padding: 159px 70px 12px;
   }
 }
 

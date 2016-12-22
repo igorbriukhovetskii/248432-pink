@@ -1,6 +1,11 @@
 .logo {
   width: 100%;
   padding: 21px 20px;
+  background-color: transparent;
+
+  @media @desktop-width {
+
+  }
 
   &--no-js,
   &--nav-opened {
@@ -9,11 +14,12 @@
   }
 
   @media @tablet-width {
-    padding: 43px 20px 42px 92px;
+    padding: 43px 0 41px 112px;
 
     &--no-js,
     &--nav-opened {
       border-bottom: 1px solid #000000;
+      padding-bottom: 41px;
     }
 
     &::before {
@@ -23,7 +29,7 @@
       width: 61px;
       height: 40px;
       top: 27px;
-      left: 20px;
+      left: 40px;
       background: transparent url("../img/glasses-tablet.png") no-repeat 0 0;
     }
   }
@@ -45,7 +51,7 @@
 }
 
 .logo__link {
-  cursor: pointer;
+  //cursor: pointer;
   fill: #ffffff;
 
   &:hover {
@@ -56,4 +62,8 @@
     fill: #ffffff;
     opacity: 0.3;
   }
+}
+
+.logo__link a[href] {
+  cursor: pointer;
 }
