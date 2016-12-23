@@ -1,7 +1,6 @@
 .logo {
   width: 100%;
   padding: 21px 20px;
-  //padding: 0;
   background-color: transparent;
 
   @media @desktop-width {
@@ -15,7 +14,7 @@
   }
 
   @media @tablet-width {
-    padding: 43px 0 41px 112px;
+    padding: 27px 0 43px 40px;
 
     &--no-js,
     &--nav-opened {
@@ -23,16 +22,16 @@
       padding-bottom: 41px;
     }
 
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 61px;
-      height: 40px;
-      top: 27px;
-      left: 40px;
-      background: transparent url("../img/glasses-tablet.png") no-repeat 0 0;
-    }
+    //&::before {
+    //  content: "";
+    //  position: absolute;
+    //  display: block;
+    //  width: 61px;
+    //  height: 40px;
+    //  top: 27px;
+    //  left: 40px;
+    //  background: transparent url("../img/glasses-tablet.png") no-repeat 0 0;
+    //}
   }
 
   @media @desktop-width {
@@ -51,8 +50,23 @@
   vertical-align: bottom;
 }
 
-.logo__link {
-  //cursor: pointer;
+.logo__medium,
+.logo__large,
+.logo__small {
+  fill: #ffffff;
+
+  &:hover {
+    fill: @shade-of-red;
+  }
+
+  &:active {
+    fill: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+/*.logo__footer-mobile,
+ {
   fill: #ffffff;
 
   &:hover {
@@ -68,8 +82,46 @@
 .logo__link a[href] {
   cursor: pointer;
 }
+*/
+.logo__small {
+  @media @tablet-width {
+    display: none;
+  }
+}
 
-.logo__link svg {
-  width: 75px;
-  height: 22px;
+.logo__medium {
+  display: none;
+
+  @media @tablet-width {
+    display: block;
+  }
+
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.logo__large {
+  display: none;
+
+  @media @desktop-width {
+    display: block;
+  }
+}
+
+.logo__large {
+}
+
+.logo__footer--mobile {
+  @media @desktop-width {
+    display: none;
+  }
+}
+
+.logo__footer--desktop {
+  display: none;
+
+  @media @desktop-width {
+    display: block;
+  }
 }

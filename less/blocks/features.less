@@ -4,7 +4,7 @@
   background: @main-bg-light url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
 
   @media @retina {
-    background: @main-bg-light url("../img/iphone-screen-mobile@2x.png") no-repeat center 723px;
+    background: @main-bg-light url("../img/iphone-screen-mobile@2x.png") no-repeat center bottom;
     background-size: 157px auto;
   }
 
@@ -72,7 +72,12 @@
     padding-right: 0;
     padding-left: 24px;
     padding-bottom: 5px;
-    background: @main-bg-light url("../img/iphone-screen-tablet@1x.png") no-repeat 0 0;
+    background: @main-bg-light url("../img/iphone-screen-3-tablet@1x.png") no-repeat 0 0;
+
+    @media @retina {
+      background: @main-bg-light url("../img/iphone-screen-3-tablet@2x.png") no-repeat 0 0;
+      background-size: 268px 481px;
+    }
   }
 
   @media @desktop-width {
@@ -101,14 +106,29 @@
     align-self: stretch;
     width: 31.5%;
     padding-top: 300px;
-    background: url("../img/iphone-screen-mobile-gray.png") no-repeat 48.5% top;
+    background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat center top;
+
+    @media @retina {
+      background: url("../img/iphone-screen-1-desktop@2x.png") no-repeat center top;
+      background-size: 292px 302px;
+    }
 
     &:nth-child(2) {
-      background: url("../img/iphone-screen-mobile-pink.png") no-repeat center top;
+      background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat center top;
+
+      @media @retina {
+        background: url("../img/iphone-screen-2-desktop@2x.png") no-repeat center top;
+        background-size: 292px 302px;
+      }
     }
 
     &:nth-child(3) {
-      background: url("../img/iphone-screen-mobile-smile.png") no-repeat center top;
+      background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat center top;
+
+      @media @retina {
+        background: url("../img/iphone-screen-3-desktop@2x.png") no-repeat center top;
+        background-size: 292px 302px;
+      }
     }
   }
 }
