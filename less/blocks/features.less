@@ -3,6 +3,11 @@
   font-family: "Open Sans", Arial, sans-serif;
   background: @main-bg-light url("../img/iphone-screen-mobile@1x.png") no-repeat center bottom;
 
+  @media @retina {
+    background: @main-bg-light url("../img/iphone-screen-mobile@2x.png") no-repeat center 723px;
+    background-size: 157px auto;
+  }
+
   @media @tablet-width {
     background-image: none;
     padding-bottom: 0;

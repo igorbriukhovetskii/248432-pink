@@ -2,6 +2,11 @@
   width: 100%;
   background: @downloads-bg url("../img/bg-back-mobile@1x.jpg") no-repeat top;
 
+  @media @retina {
+    background: @downloads-bg url("../img/bg-back-mobile@2x.jpg") no-repeat top;
+    background-size: 700px 462px;
+  }
+
   @media @tablet-width {
     background-size: cover;
   }
@@ -47,6 +52,11 @@
   padding-top: 109px;
   background: url("../img/iphone-hand-mobile@1x.png") no-repeat left 109px;
 
+  @media @retina {
+    background: url("../img/iphone-hand-mobile@2x.png") no-repeat left 109px;
+    background-size: 80.9%;
+  }
+
   @media @tablet-width {
     padding-top: 0;
     background: none;
@@ -62,6 +72,10 @@
   min-height: 169px;
   padding-top: 0;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -70px;
+
+  @media @retina {
+    //background: url;
+  }
 
   @media @tablet-width {
     background: url("../img/bg-back-mobile@1x.jpg") no-repeat 0 -110px;
