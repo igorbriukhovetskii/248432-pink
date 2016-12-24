@@ -34,6 +34,11 @@
     //background-color: transparent;
     //background-size: contain;
     background: url("../img/iphone-hand-tablet@1x.png") no-repeat -40px 73px;
+
+    @media @retina {
+      background: url("../img/iphone-hand-tablet@2x.png") no-repeat -40px 73px;
+      background-size: 700px 545px;
+    }
   }
 
   @media @desktop-width {
@@ -41,6 +46,11 @@
     min-height: 644px;
     margin-left: 0;
     background: url("../img/iphone-hand-desktop@1x.png") no-repeat 16px 0;
+
+    @media @retina {
+      background: url("../img/iphone-hand-desktop@2x.png") no-repeat 16px 0px;
+      background-size: 1050px 645px;
+    }
   }
 }
 

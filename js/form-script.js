@@ -15,9 +15,17 @@ function changeInputColor(element, color) {
 
 function formCheckOnSubmit () {
   if ((firstName.checkValidity() !== true ) || (secondName.checkValidity() !== true) || (email.checkValidity() !== true)) {
-    changeInputColor(firstName, "red");
-    changeInputColor(secondName, "red");
-    changeInputColor(email, "red");
+    if (firstName.checkValidity() !== true ) {
+      changeInputColor(firstName, "red");
+    }
+
+    if (secondName.checkValidity() !== true) {
+      changeInputColor(secondName, "red");
+    }
+
+    if (email.checkValidity() !== true) {
+      changeInputColor(email, "red");
+    }
     popupFailure.classList.toggle("visually-hidden");
     overlay.classList.toggle("visually-hidden");
   } else {
@@ -25,8 +33,8 @@ function formCheckOnSubmit () {
     changeInputColor(secondName, "white");
     changeInputColor(email, "white");
     popupSuccess.classList.toggle("visually-hidden");
+    popupSuccess.classList.toggle("popup--opened");
     overlay.classList.toggle("visually-hidden");
-    //form.submit();
   }
 }
 

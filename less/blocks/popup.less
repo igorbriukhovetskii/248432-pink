@@ -1,4 +1,7 @@
 .popup {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -7,6 +10,137 @@
   margin-top: -170px;
   margin-left: -160px;
   background-color: #ffffff;
+  font-family: "Open Sans", Arial, sans-serif;
+  box-shadow: #000000 0 0 28px -2px;
   z-index: 10;
-  outline: 1px solid red;
+
+  &--failure {
+    width: 320px;
+    min-height: 289px;
+
+    @media @tablet-width {
+      width: 458px;
+      min-height: 363px;
+      margin-top: -181px;
+      margin-left: -229px;
+      padding: 0 70px;
+      border-radius: 5px;
+    }
+  }
+
+  &--success {
+    width: 320px;
+    min-height: 380px;
+
+    @media @tablet-width {
+      width: 458px;
+      min-height: 435px;
+      margin-left: -217px;
+    }
+
+    @media @desktop-width {
+      width: 780px;
+      min-height: 377px;
+      margin-left: -390px;
+    }
+  }
+}
+
+.popup b {
+  padding-top: 45px;
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+
+  @media @tablet-width {
+    font-size: 30px;
+  }
+}
+
+.popup p {
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 1.72;
+  font-weight: normal;
+  color: @main-bg-dark;
+  text-align: center;
+
+  @media @tablet-width {
+    padding-top: 25px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.popup--success p {
+  padding-left: 48px;
+  padding-right: 48px;
+
+  @media @tablet-width {
+    padding-left: 68px;
+    padding-right: 68px;
+  }
+
+  @media @desktop-width {
+    padding-left: 170px;
+    padding-right: 170px;
+  }
+}
+
+.popup--success b {
+
+  @media @tablet-width {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.popup--failure .popup__button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: auto;
+  width: 100%;
+  min-height: 113px;
+}
+
+.popup--success .popup__button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  min-height: 168px;
+  background-color: @main-bg-light;
+}
+
+.popup__button-wrapper button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 63px;
+  background-color: #2aab6d;
+  border-color: transparent;
+  border-radius: 5px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67px;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  @media @tablet-width {
+    width: 300px;
+  }
+
+  @media @desktop-width {
+    width: 460px;
+  }
+}
+
+.popup.visually-hidden {
+  display: none;
 }

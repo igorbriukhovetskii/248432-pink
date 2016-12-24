@@ -48,7 +48,6 @@
 }
 
 .user-photo {
-  margin: 0 auto;
 
   @media @tablet-width {
     margin: 0;
@@ -89,6 +88,7 @@
 }
 
 .user-photo__user-img--featured {
+  position: relative;
   width: 320px;
   height: 137px;
   margin: 0 auto;
@@ -100,6 +100,35 @@
 
   @media @desktop-width {
     height: 506px;
+  }
+
+  &::before {
+    position: absolute;
+    content: "Панорама дня";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    min-height: 36px;
+    top: 0;
+    right: 20px;
+    background-color: @shade-of-red;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 12px;
+    line-height: 2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    @media @tablet-width {
+      top: 58px;
+      right: 40px;
+    }
+
+    @media @desktop-width {
+      top: 54px;
+      right: 130px;
+    }
   }
 }
 
@@ -157,7 +186,7 @@
   }
 
   .user-photo--featured .user-photo__description {
-    padding: 17px 0 17px 0;
+    padding: 17px 0 18px 0;
 
     @media @tablet-width {
       align-content: center;
@@ -267,7 +296,7 @@
     height: 12px;
     top: 5px;
     left: 18px;
-    background: url(../img/icon-heart.png) no-repeat;
+    background: url(../img/icon-heart.svg) no-repeat;
 
     @media @tablet-width {
       left: auto;

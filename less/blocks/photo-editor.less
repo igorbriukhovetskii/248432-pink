@@ -42,7 +42,7 @@
   }
 }
 
-.photo-editor__photo img {
+.photo-editor__photo a {
   margin: auto;
   width: 280px;
   height: 374px;
@@ -84,7 +84,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 63.75%;
+  width: 240px;
   height: 87px;
   margin: 0 auto;
 
@@ -300,8 +300,11 @@
 
 .photo-editor__edit-button,
 .photo-editor__icon svg {
-  width: 50px;
-  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.33%;
+  height: 87px;
   font-size: 0;
   opacity: 0.3;
   cursor: pointer;
@@ -333,40 +336,60 @@
   }
 }
 
-.photo-editor__edit-button--crop {
+.photo-editor__edit-button--active svg {
+  opacity: 1;
+}
+
+.photo-editor__edit-button--crop svg {
   //background: url("../img/icon-editor-crop.svg") no-repeat -2px -2px;
+  width: 48px;
+  height: 48px;
 
   @media @tablet-width {
     //background: url("../img/crop-tablet.png") no-repeat;
+    width: 24px;
+    height: 24px;
   }
 
   @media @desktop-width {
+    width: 48px;
+    height: 48px;
     //background: url("../img/icon-editor-crop.svg") no-repeat 0 -2px;
   }
 }
 
-.photo-editor__edit-button--fill {
+.photo-editor__edit-button--fill svg {
   //background: url("../img/icon-editor-fill.svg") no-repeat center;
+  width: 48px;
+  height: 48px;
 
   @media @tablet-width {
-    width: 26px;
+    width: 24px;
+    height: 24px;
     //background: url("../img/fill-tablet.png") no-repeat 2px 2px;
   }
 
   @media @desktop-width {
-    width: 50px;
+    width: 48px;
+    height: 48px;
     //background: url("../img/icon-editor-fill.svg") no-repeat 2px 1px;
   }
 }
 
-.photo-editor__edit-button--contrast {
+.photo-editor__edit-button--contrast svg {
   //background: url("../img/icon-editor-contrast.svg") no-repeat 12px 5px;
+  width: 32px;
+  height: 32px;
 
   @media @tablet-width {
+    width: 16px;
+    height: 16px;
     //background: url("../img/contrast-tablet.png") no-repeat 5px 2px;
   }
 
   @media @desktop-width {
+    width: 32px;
+    height: 32px;
     //background: url("../img/icon-editor-contrast.svg") no-repeat 8px 5px;
   }
 }
