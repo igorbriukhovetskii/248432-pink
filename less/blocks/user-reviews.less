@@ -27,7 +27,6 @@
 
 .user-reviews__review {
   display: none;
-  //padding: 0 20px;
   flex-direction: column;
 
   @media @tablet-width {
@@ -91,6 +90,26 @@
 
   @media @desktop-width {
     padding: 159px 70px 12px;
+  }
+}
+
+.user-reviews__control {
+  fill: #bec2c7;
+  display: none;
+
+  @media @desktop-width {
+    display: block;
+    position: absolute;
+
+    &--left {
+      top: 51.1%;
+      left: 0;
+    }
+
+    &--right {
+      top: 51.1%;
+      right: 0;
+    }
   }
 }
 
