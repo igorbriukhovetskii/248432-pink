@@ -96,6 +96,40 @@
   }
 }
 
+.promo__plan--hit {
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    content: "Хит";
+    display: block;
+    box-sizing: border-box;
+    height: 30px;
+    width: 120px;
+    top: 10px;
+    left: -38px;
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 2.15;
+    font-weight: normal;
+    background-color: @shade-of-red;
+    transform: rotate(-45deg);
+
+    @media @tablet-width {
+      padding-left: 21px;
+      height: 28px;
+      left: -47px;
+      line-height: 1.9;
+    }
+
+    @media @desktop-width {
+      left: -37px;
+      padding-left: 4px;
+    }
+  }
+}
+
 .promo__plan span {
   display: block;
 }
@@ -304,6 +338,7 @@ td.promo__empty {
   display: block;
   position: absolute;
   width: 100vw;
+  height: 26px;
   left: 0;
   fill: #ffffff;
 
@@ -321,4 +356,9 @@ td.promo__empty {
     transform: none;
     fill: #ffffff;
   }
+}
+
+.promo__bg-mask svg {
+  width: 100vw;
+  height: 100%;
 }
