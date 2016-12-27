@@ -67,15 +67,10 @@
     </header>
     <main class="main">
       <section class="users-photos">
-        <h2 class="visually-hidden">
-          Фотографии пользователей
-        </h2>
-        <div class="users-photos__intro">
-          <p>
-            Взгляните на фотографии, которые выкладывают пользователи!
-            Видите, как не хватает ваших?
-          </p>
-        </div>
+        <p class="users-photos__intro">
+          Взгляните на фотографии, которые выкладывают пользователи!
+          Видите, как не хватает ваших?
+        </p>
         <div class="user-photo user-photo--featured">
           <div class="user-photo__user-img    user-photo__user-img--featured">
             <a href="#">
@@ -101,9 +96,9 @@
               смотрите прямую трансляцию в перископе, задавайте свои вопросы!
             </p>
             <div class="user-photo__likes">
-              <span>
+              <a href="#">
                 Нравится: 215
-              </span>
+              </a>
             </div>
           </div>
         </div>
@@ -132,9 +127,9 @@
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
                 <div class="user-photo__likes">
-                  <span>
+                  <a href="#">
                     Нравится: 356
-                  </span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -162,9 +157,9 @@
                 Соседи будут рады!
               </p>
               <div class="user-photo__likes">
-                <span>
+                <a href="#">
                   Нравится: 666
-                </span>
+                </a>
               </div>
             </div>
           </div>
@@ -192,9 +187,9 @@
                 Здесь могла быть ваша цитата о высоком и вечном.
               </p>
               <div class="user-photo__likes">
-                <span>
+                <a href="#">
                   Нравится: 215
-                </span>
+                </a>
               </div>
             </div>
           </div>
@@ -222,9 +217,9 @@
                 Самая кубанская в мире!
               </p>
               <div class="user-photo__likes">
-                <span>
+                <a href="#">
                   Нравится: 4
-                </span>
+                </a>
               </div>
             </div>
           </div>
@@ -252,9 +247,9 @@
                 Где снег-то?
               </p>
               <div class="user-photo__likes">
-                <span>
+                <a href="#">
                   Нравится: 150
-                </span>
+                </a>
               </div>
             </div>
           </div>
@@ -274,15 +269,15 @@
                 <b class="user-photo__author-name">
                   Надежда
                 </b>
-              </div>
-              <span class="user-photo__time">
+                <span class="user-photo__time">
                 (45 часов назад)
-              </span>
+                </span>
+              </div>
               <p class="user-photo__comment">
                 Всем GM и взаимные лайки!
               </p>
               <div class="user-photo__likes">
-                <span>Нравится: 2560</span>
+                <a href="#">Нравится: 2560</a>
               </div>
             </div>
           </div>
@@ -297,10 +292,7 @@
       </div>
       </section>
       <section class="photo-editor">
-        <div class="photo-editor__wrapper">
-          <h2 class="visually-hidden">
-            Редактирование и загрузка фото
-          </h2>
+        <form method="post" action="#" class="photo-editor__wrapper">
           <div class="photo-editor__photo">
             <a href="#">
               <picture>
@@ -362,23 +354,20 @@
               </div>
             </div>
             <div class="photo-editor__upload">
-              <button class="photo-editor__button  photo-editor__button--upload" type="button">
-                <span>Запостить</span>
+              <button class="photo-editor__button  photo-editor__button--upload" type="submit">
+                Запостить
               </button>
-              <button class="photo-editor__button  photo-editor__button--cancel" type="button">
+              <button class="photo-editor__button  photo-editor__button--cancel" type="reset">
                 Отмена
               </button>
             </div>
           </div>
-        </div>
+        </form>
       </section>
     </main>
     <footer class="page-footer  page-footer--inner  page-footer--photo">
       <div class="page-footer__bottom">
         <div class="page-footer__logo">
-          <h2 class="visually-hidden">
-            Pink
-          </h2>
           <a href="index.html">
             <svg class="logo__footer  logo__footer--mobile" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="146.3px" height="40.375px" viewBox="0 0 146.3 40.375" enable-background="new 0 0 146.3 40.375" xml:space="preserve">
               <g>

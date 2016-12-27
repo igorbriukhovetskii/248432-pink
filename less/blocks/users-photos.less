@@ -2,7 +2,7 @@
   background-color: #ffffff;
 }
 
-.users-photos__intro p {
+.users-photos__intro {
   padding: 45px 15px 49px;
   font-size: 14px;
   line-height: 2.15;
@@ -28,7 +28,6 @@
   flex-wrap: wrap;
   width: 280px;
   min-height: 1993px;
-  //max-width: 559px;
   margin: 0 auto;
   padding-top: 21px;
 
@@ -54,7 +53,7 @@
   }
 
   @media @desktop-width {
-    height: 555px;
+    min-height: 555px;
     margin-top: 50px;
   }
 }
@@ -270,6 +269,10 @@
       padding: 1px 40px 5px 18px;
     }
   }
+
+.user-photo__likes a {
+  color: @shade-of-red;
+}
 
   .user-photo--featured .user-photo__likes {
 
