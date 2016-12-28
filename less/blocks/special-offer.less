@@ -253,6 +253,7 @@
     width: 259px;
     flex-shrink: 2;
     margin: 0;
+    margin-bottom: 20px;
     text-align: left;
   }
 }
@@ -320,6 +321,10 @@
   }
 }
 
+.special-offer__achievement label:active input[type="checkbox"] + .special-offer__checkbox::before,
+.special-offer__achievement label:active input[type="checkbox"] + .special-offer__checkbox::after,
+.special-offer__achievement input[type="checkbox"] + .special-offer__checkbox:active::before,
+.special-offer__achievement input[type="checkbox"] + .special-offer__checkbox:active::after,
 .special-offer__achievement input[type="checkbox"]:checked + .special-offer__checkbox::before,
 .special-offer__achievement input[type="checkbox"]:checked + .special-offer__checkbox::after {
   content: "";
@@ -329,18 +334,34 @@
   background-color: @shade-of-red;
 }
 
-.special-offer__achievement input[type="checkbox"]:checked + .special-offer__checkbox::before {
+.special-offer__checkbox::before {
   width: 22px;
   transform: translateX(10px) translateY(16px) rotate(-45deg);
 }
 
-.special-offer__achievement input[type="checkbox"]:checked + .special-offer__checkbox::after {
+.special-offer__checkbox::after {
   width: 9px;
   transform: translateX(6px) translateY(20px) rotate(45deg);
 }
 
 .special-offer__achievement input {
   display: none;
+}
+
+/*.special-offer__achievement input[type="checkbox"] + .special-offer__checkbox:active::before,
+.special-offer__achievement input[type="checkbox"] + .special-offer__checkbox:active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 2px;
+  background-color: @shade-of-red;
+}*/
+
+.special-offer__achievement label:active input[type="checkbox"]:checked + .special-offer__checkbox::before,
+.special-offer__achievement label:active input[type="checkbox"]:checked + .special-offer__checkbox::after,
+.special-offer__achievement input[type="checkbox"]:checked + .special-offer__checkbox:active::before,
+.special-offer__achievement input[type="checkbox"]:checked + .special-offer__checkbox:active::after {
+  background-color: transparent;
 }
 
 .special-offer__contacts {
@@ -603,6 +624,7 @@ label[for="email"] span {
     width: auto;
     height: auto;
     margin: 0;
+    margin-bottom: 30px;
     padding: 6px 0 0 59px;
   }
 }
@@ -645,6 +667,8 @@ label[for="email"] span {
 
 }
 
+.special-offer__app-name label:active input[type="radio"] + .special-offer__radio-btn::before,
+.special-offer__app-name input[type="radio"] + .special-offer__radio-btn:active::before,
 .special-offer__app-name input[type="radio"]:checked + .special-offer__radio-btn::before {
   content: "";
   position: absolute;
@@ -655,6 +679,31 @@ label[for="email"] span {
   height: 15px;
   border-radius: 50%;
   background-color: @shade-of-red;
+}
+
+.special-offer__app-name label:active input[type="radio"]:checked + .special-offer__radio-btn::before,
+.special-offer__app-name input[type="radio"]:checked + .special-offer__radio-btn:active::before {
+  background-color: transparent;
+}
+
+.special-offer label {
+  cursor: pointer;
+}
+
+.special-offer label:hover .special-offer__radio-btn,
+.special-offer label:hover .special-offer__checkbox {
+   border-color: @main-bg-dark;
+}
+
+.special-offer label:active .special-offer__radio-btn,
+.special-offer label:active .special-offer__checkbox {
+  border-color: @shade-of-red;
+  background-color: #ffffff;
+}
+
+.special-offer label:hover .special-offer__radio-btn:active,
+.special-offer label:hover .special-offer__checkbox:active {
+  border-color: @shade-of-red;
 }
 
 .special-offer__comment {
